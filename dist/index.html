@@ -5,11 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/index.f7626f62.css">
   </head>
   <body>
-    <h1>hello</h1>
+    <header class="header">
+  <a href="/index.html" class="logo-link"><img class="logo-img" src="/logo.726d37a8.png" alt="Лого майстерні напівфабрикатів Ласий кусь, зображує ситого та задоволеного кота"></a>
+  <nav class="nav">
+    <ul class="nav-list">
+      <a href="#hero" class="nav-link">
+        <li class="nav-item">Про нас</li>
+      </a>
+      <a href="" class="nav-link">
+        <li class="nav-item">Меню</li>
+      </a>
+      <a href="" class="nav-link">
+        <li class="nav-item">Рецепти</li>
+      </a>
+    </ul>
+  </nav>
+</header>
 
-    <h1>hi</h1>
-  <script src="/kus_prod.59712999.js"></script></body>
+    <main>
+      <section class="hero" id="hero">
+  <h1 class="hero-heading">
+    Ласий Кусь<span class="hero-span">домашня майстерня напівфабрикатів</span>
+  </h1>
+</section>
+
+      <section class="features">
+  <div class="cards--grid">
+    <div class="card--wrap">
+      <div class="card">
+        <div class="card--contents card--front">
+          <div class="card--depth">
+            <figure class="card--figure">
+              <img src="/menu-pelmeni.21f98956.jpg" alt="Пельмені">
+            </figure>
+          </div>
+        </div>
+        <div class="card--contents card--back hue--gradient--1--back">
+          <div class="card--depth">
+            <div class="retro">
+              <h2>Пельмені</h2>
+              <ul>
+                <li>Свині</li>
+                <li>Свинояловичині</li>
+                <li>Свинояловичині</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card--wrap">
+      <div class="card">
+        <div class="card--contents card--front">
+          <div class="card--depth">
+            <figure class="card--figure">
+              <img src="/menu-holubzi.be819a6c.jpg" alt="Голубці">
+            </figure>
+          </div>
+        </div>
+        <div class="card--contents card--back hue--gradient--3--back">
+          <div class="card--depth">
+            <div class="retro">
+              <h2>Голубці</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card--wrap">
+      <div class="card">
+        <div class="card--contents card--front">
+          <div class="card--depth">
+            <figure class="card--figure">
+              <img src="/menu-hinkali.9f3ec163.jpg" alt="Хінкалі">
+            </figure>
+          </div>
+        </div>
+        <div class="card--contents card--back hue--gradient--4--back">
+          <div class="card--depth">
+            <div class="retro">
+              <h2>Хінкалі</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card--wrap">
+      <div class="card">
+        <div class="card--contents card--front">
+          <div class="card--depth">
+            <figure class="card--figure">
+              <img src="/menu-shtruli.06796b78.jpg" alt="Штрулі">
+            </figure>
+          </div>
+        </div>
+        <div class="card--contents card--back hue--gradient--5--back">
+          <div class="card--depth">
+            <div class="retro">
+              <h2>Штрулі</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="videos">
+  <div class="container">
+    <div class="video-container">
+      <h1 class="section-header">Рецепти</h1>
+      <aside>
+        <ul class="video-filter">
+          <li class="filter-item" data-category="1">cat</li>
+          <li class="filter-item" data-category="2">cat</li>
+          <li class="filter-item" data-category="3">cat</li>
+          <li class="filter-item" data-category="4">cat</li>
+          <li class="filter-item" data-category="5">cat</li>
+          <li class="filter-item" data-category="6">cat</li>
+          <li class="filter-item" data-category="7">cat</li>
+        </ul>
+      </aside>
+      <div class="video-gallery" id="videoGallery"></div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="video-modal overflow visually-hidden">
+  <div class="modal">
+    <button type="button" class="close-btn" aria-label="close">
+      <span class="modal-icon">X</span>
+    </button>
+    <h3 class="">рецепт</h3>
+    <iframe class="iframe" id="videoModal" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+    </iframe>
+    <button type="button" id="previous">Попереднє</button>
+    <button type="button" id="next">Наступне</button>
+  </div>
+</div>
+
+    <div class="cursor"></div>
+<div class="cursor2"></div>
+
+    <script src="/index.2b32cbbd.js" defer=""></script>
+    <script src="/index.14ea0823.js"></script>
+    <script src="/index.e6e01bb1.js"></script>
+  </body>
 </html>

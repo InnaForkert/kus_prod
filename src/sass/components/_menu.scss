@@ -1,0 +1,194 @@
+.cards--grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.card--wrap {
+  display: inline-block;
+  place-self: start;
+
+  &:hover {
+    .card {
+      transform: rotateY(-180deg);
+    }
+  }
+}
+
+.card {
+  height: 21rem;
+  width: 30rem;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: 3rem;
+}
+
+.rotated {
+  transform: rotateY(-180deg);
+}
+
+.card--contents {
+  border-radius: 3rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+.card--depth {
+  display: flex;
+  align-items: center;
+  transform: translateZ(100px);
+  perspective: inherit;
+}
+
+.card--figure {
+  width: 90%;
+  margin: 5%;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
+  }
+}
+
+.card--front {
+  transform-style: preserve-3d;
+  background: #fff;
+}
+.card--back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+  .retro {
+    width: max-content;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+.hue {
+  &--gradient {
+    height: 5rem;
+    width: 100%;
+    background: red;
+    border-radius: 5rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
+  }
+
+  /* -- FIRST ROW: NATURE -- */
+  /* card 1 -> Paradise */
+  &--1 {
+    background-color: #e5c5b4;
+  }
+  &--2 {
+    background-color: #2cb2bf;
+  }
+  &--3 {
+    background-color: #105a75;
+  }
+  &--gradient--1 {
+    background-image: linear-gradient(90deg, #e5c5b4, #2cb2bf, #105a75);
+  }
+  &--gradient--1--back {
+    background-image: linear-gradient(120deg, #e5c5b4, #2cb2bf, #105a75);
+  }
+
+  /* card 2 -> Red Autumn */
+  &--4 {
+    background-color: #d0c4ca;
+  }
+  &--5 {
+    background-color: #9d252f;
+  }
+  &--6 {
+    background-color: #373227;
+  }
+  &--gradient--2 {
+    background-image: linear-gradient(90deg, #d0c4ca, #9d252f, #373227);
+  }
+  &--gradient--2--back {
+    background-image: linear-gradient(120deg, #d0c4ca, #9d252f, #373227);
+  }
+
+  /* card 3 -> Lilac */
+  &--7 {
+    background-color: #6608ae;
+  }
+  &--8 {
+    background-color: #c78ff2;
+  }
+  &--9 {
+    background-color: #fcbe34;
+  }
+  &--gradient--3 {
+    background-image: linear-gradient(90deg, #6608ae, #c78ff2, #fcbe34);
+  }
+  &--gradient--3--back {
+    background-image: linear-gradient(120deg, #6608ae, #c78ff2, #fcbe34);
+  }
+
+  /* -- SECOND ROW: URBAN -- */
+  /* card 4 -> Brick street */
+  &--10 {
+    background-color: #913534;
+  }
+  &--11 {
+    background-color: #4e6377;
+  }
+  &--12 {
+    background-color: #9bc6fa;
+  }
+  &--gradient--4 {
+    background-image: linear-gradient(90deg, #913534, #4e6377, #9bc6fa);
+  }
+  &--gradient--4--back {
+    background-image: linear-gradient(120deg, #913534, #4e6377, #9bc6fa);
+  }
+
+  /* card 5 -> Subway */
+  &--13 {
+    background-color: #cbcac8;
+  }
+  &--14 {
+    background-color: #eea200;
+  }
+  &--15 {
+    background-color: #3a3a3a;
+  }
+  &--gradient--5 {
+    background-image: linear-gradient(90deg, #cbcac8, #eea200, #3a3a3a);
+  }
+  &--gradient--5--back {
+    background-image: linear-gradient(120deg, #cbcac8, #eea200, #3a3a3a);
+  }
+
+  /* card 6 -> Graffiti */
+  &--16 {
+    background-color: #2ad0ca;
+  }
+  &--17 {
+    background-color: #fc4d9d;
+  }
+  &--18 {
+    background-color: #fcce37;
+  }
+  &--gradient--6 {
+    background-image: linear-gradient(90deg, #2ad0ca, #fc4d9d, #fcce37);
+  }
+  &--gradient--6--back {
+    background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
+  }
+}

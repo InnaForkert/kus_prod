@@ -1,0 +1,13 @@
+@import "~node_modules/modern-normalize/modern-normalize.css";
+
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/visually-hidden";
+@import "./base/container";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/menu";
+@import "./components/videos";
+@import "./components/modal";
+@import "./components/cursor";

@@ -1,0 +1,34 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 99;
+
+  padding: 15px;
+
+  background-color: aliceblue;
+}
+.logo {
+  &-link {
+    width: 70px;
+  }
+}
+.nav {
+  &-list {
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+  }
+  &-item {
+    &:hover,
+    &:focus {
+      color: tomato;
+    }
+  }
+}

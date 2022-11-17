@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./sass/main.scss" />
   </head>
   <body>
     <include src="./partials/header.html"></include>
-    <h1>hi</h1>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/cards.html"></include>
+      <include src="./partials/videos.html"></include>
+    </main>
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/cursor.html"></include>
+    <script type="module" src="./scripts/menu.js"></script>
+    <script src="./scripts/videos.js"></script>
+    <script src="./scripts/cursor.js"></script>
   </body>
 </html>
