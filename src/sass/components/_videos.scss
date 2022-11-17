@@ -154,18 +154,17 @@ h1 {
   text-align: center;
   width: 140px;
   background-color: beige;
-  cursor: pointer;
   padding: 15px;
   transition: background-color 250ms ease-in-out, width 250ms ease-in-out;
   border-radius: 0 50px 50px 0;
 }
 
 .filter-item:hover {
-  background-color: rgba(245, 245, 220, 0.629)
+  background-color: rgba(245, 245, 220, 0.629);
 }
 
-.active-filter, .active-filter:hover {
+.active-filter,
+.active-filter:hover {
   background-color: transparent;
   width: 150px;
 }
-
