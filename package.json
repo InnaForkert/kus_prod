@@ -1,22 +1,22 @@
 {
-  "name": "template",
+  "name": "kus_prod",
   "version": "1.0.0",
-  "description": "template",
+  "description": "kus_prod",
   "scripts": {
     "test": "test",
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /tetris/"
+    "build": "parcel build src/*.html --public-url /kus_prod/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InnaForkert/template.git"
+    "url": "git+https://github.com/InnaForkert/kus_prod.git"
   },
   "author": "Inna Forkert",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/InnaForkert/template/issues"
+    "url": "https://github.com/InnaForkert/kus_prod/issues"
   },
-  "homepage": "https://github.com/InnaForkert/template",
+  "homepage": "https://github.com/InnaForkert/kus_prod",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.6.0",
     "@parcel/transformer-sass": "^2.7.0",
