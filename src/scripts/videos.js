@@ -1,8 +1,7 @@
-console.log("../src/img/menu-hinkali.jpg");
 const videoArray = [
   {
     id: 1,
-    img: "../src/img/menu-hinkali.jpg",
+    img: new URL("../img/menu-hinkali.jpg", import.meta.url),
     alt: "Відео-рецепт приготування пельменів",
     link: "https://www.youtube.com/embed/sleryK4X4S8",
     heading: "Пельмені",
@@ -11,7 +10,7 @@ const videoArray = [
   },
   {
     id: 2,
-    img: "./img/menu-hinkali.jpg",
+    img: new URL("../img/menu-hinkali.jpg", import.meta.url),
     alt: "Відео-рецепт приготування хінкалі",
     link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
     heading: "Пельмені",
@@ -20,7 +19,7 @@ const videoArray = [
   },
   {
     id: 3,
-    img: "./img/menu-hinkali.jpg",
+    img: new URL("../img/menu-hinkali.jpg", import.meta.url),
     alt: "Відео-рецепт приготування хінкалі",
     link: "https://www.youtube.com/embed/VwI54d-rThQ",
     heading: "Пельмені",
@@ -29,7 +28,7 @@ const videoArray = [
   },
   {
     id: 4,
-    img: "./img/menu-hinkali.jpg",
+    img: new URL("../img/menu-hinkali.jpg", import.meta.url),
     alt: "Відео-рецепт приготування хінкалі",
     link: "https://www.youtube.com/embed/sleryK4X4S8",
     heading: "Пельмені",
@@ -37,6 +36,7 @@ const videoArray = [
     category: "4",
   },
 ];
+console.log(videoArray[0].img);
 
 const videoGallery = document.querySelector("#videoGallery");
 const videoModal = document.querySelector("#videoModal");
@@ -50,6 +50,9 @@ let currentDiv;
 
 createVideos(videoArray);
 
+filters.forEach((filter) => {
+  filter.addEventListener("click", handleFilter);
+});
 modalIcon.addEventListener("click", videoClose);
 next.addEventListener("click", nextVideo);
 previous.addEventListener("click", previousVideo);
@@ -109,10 +112,6 @@ function videoPopup(e) {
   modal.classList.remove("visually-hidden");
   currentDiv = e.currentTarget;
 }
-
-filters.forEach((filter) => {
-  filter.addEventListener("click", handleFilter);
-});
 
 function handleFilter(e) {
   currentFilter ? currentFilter.classList.remove("active-filter") : null;
