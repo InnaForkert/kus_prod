@@ -1,8 +1,7 @@
-console.log("../src/img/menu-hinkali.jpg");
 const videoArray = [
     {
         id: 1,
-        img: "../src/img/menu-hinkali.jpg",
+        img: "./menu-hinkali.jpg",
         alt: "Відео-рецепт приготування пельменів",
         link: "https://www.youtube.com/embed/sleryK4X4S8",
         heading: "Пельмені",
@@ -37,6 +36,7 @@ const videoArray = [
         category: "4"
     }
 ];
+console.log(videoArray[0].img);
 const videoGallery = document.querySelector("#videoGallery");
 const videoModal = document.querySelector("#videoModal");
 const modal = document.querySelector(".video-modal");
@@ -47,6 +47,9 @@ const filters = document.querySelectorAll(".filter-item");
 let currentFilter;
 let currentDiv;
 createVideos(videoArray);
+filters.forEach((filter)=>{
+    filter.addEventListener("click", handleFilter);
+});
 modalIcon.addEventListener("click", videoClose);
 next.addEventListener("click", nextVideo);
 previous.addEventListener("click", previousVideo);
@@ -94,9 +97,6 @@ function videoPopup(e) {
     modal.classList.remove("visually-hidden");
     currentDiv = e.currentTarget;
 }
-filters.forEach((filter)=>{
-    filter.addEventListener("click", handleFilter);
-});
 function handleFilter(e) {
     currentFilter && currentFilter.classList.remove("active-filter");
     currentFilter = e.target;
