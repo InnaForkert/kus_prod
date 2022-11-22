@@ -12,23 +12,36 @@
 
   padding: 15px;
 
-  background-color: aliceblue;
+  background-color: $white;
+
+  box-shadow: 0 0 5px $black;
 }
 .logo {
   &-link {
-    width: 70px;
+    width: 80px;
+    margin-left: 25px;
   }
 }
 .nav {
   &-list {
     display: flex;
-    gap: 40px;
-    margin-right: 40px;
+    gap: 60px;
+    margin-right: 60px;
   }
   &-item {
+    padding: 5px 10px;
+    font-family: $main-font;
+    color: $black;
+    font-size: 20px;
+
+    transition: box-shadow 250ms;
+
     &:hover,
     &:focus {
-      color: tomato;
+      color: $accent-color;
+      box-shadow: $accent-color 0px 0px 0px 2px inset,
+        $white 10px -10px 0px -3px, tomato 10px -10px,
+        $white 20px -20px 0px -3px, $accent-color 20px -20px;
     }
   }
 }

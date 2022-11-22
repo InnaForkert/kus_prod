@@ -41,6 +41,12 @@ section {
   padding-inline: 20px;
 }
 
+body {
+  position: relative;
+  font-family: "Comforta", sans-serif;
+  color: rgb(21, 13, 42);
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -89,20 +95,30 @@ section {
   align-items: center;
   z-index: 99;
   padding: 15px;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 250);
+  box-shadow: 0 0 5px rgb(21, 13, 42);
 }
 
 .logo-link {
-  width: 70px;
+  width: 80px;
+  margin-left: 25px;
 }
 
 .nav-list {
   display: flex;
-  gap: 40px;
-  margin-right: 40px;
+  gap: 60px;
+  margin-right: 60px;
+}
+.nav-item {
+  padding: 5px 10px;
+  font-family: "Comforta", sans-serif;
+  color: rgb(21, 13, 42);
+  font-size: 20px;
+  transition: box-shadow 250ms;
 }
 .nav-item:hover, .nav-item:focus {
-  color: tomato;
+  color: rgb(207, 19, 19);
+  box-shadow: rgb(207, 19, 19) 0px 0px 0px 2px inset, rgb(255, 255, 250) 10px -10px 0px -3px, tomato 10px -10px, rgb(255, 255, 250) 20px -20px 0px -3px, rgb(207, 19, 19) 20px -20px;
 }
 
 .hero {

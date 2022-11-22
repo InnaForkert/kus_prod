@@ -15,7 +15,6 @@ h6,
 p,
 a,
 button {
-  
   font-family: "Roboto", sans-serif;
 }
 
@@ -34,4 +33,9 @@ a {
 section {
   padding-block: 60px;
   padding-inline: 20px;
+}
+body {
+  position: relative;
+  font-family: $main-font;
+  color: $black;
 }

@@ -147,6 +147,12 @@ section {
   padding-inline: 20px;
 }
 
+body {
+  color: #150d2a;
+  font-family: Comforta, sans-serif;
+  position: relative;
+}
+
 .visually-hidden {
   white-space: nowrap;
   width: 1px;
@@ -189,7 +195,7 @@ section {
 .header {
   width: 100%;
   z-index: 99;
-  background-color: #f0f8ff;
+  background-color: #fffffa;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
@@ -197,20 +203,31 @@ section {
   position: sticky;
   top: 0;
   left: 0;
+  box-shadow: 0 0 5px #150d2a;
 }
 
 .logo-link {
-  width: 70px;
+  width: 80px;
+  margin-left: 25px;
 }
 
 .nav-list {
-  gap: 40px;
-  margin-right: 40px;
+  gap: 60px;
+  margin-right: 60px;
   display: flex;
 }
 
+.nav-item {
+  color: #150d2a;
+  padding: 5px 10px;
+  font-family: Comforta, sans-serif;
+  font-size: 20px;
+  transition: box-shadow .25s;
+}
+
 .nav-item:hover, .nav-item:focus {
-  color: tomato;
+  color: #cf1313;
+  box-shadow: inset 0 0 0 2px #cf1313, 10px -10px 0 -3px #fffffa, 10px -10px tomato, 20px -20px 0 -3px #fffffa, 20px -20px #cf1313;
 }
 
 .hero {
