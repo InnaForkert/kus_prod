@@ -18,7 +18,7 @@ h6,
 p,
 a,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 img {
@@ -43,7 +43,7 @@ section {
 
 body {
   position: relative;
-  font-family: "Comforta", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   color: rgb(21, 13, 42);
 }
 
@@ -111,7 +111,7 @@ body {
 }
 .nav-item {
   padding: 5px 10px;
-  font-family: "Comforta", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   color: rgb(21, 13, 42);
   font-size: 20px;
   transition: box-shadow 250ms;
@@ -158,7 +158,7 @@ body {
   border-radius: 0 35px;
   width: 70%;
   background-color: rgba(255, 228, 196, 0.707);
-  font-family: "Comforta", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: rgb(21, 13, 42);
@@ -207,7 +207,9 @@ body {
 }
 
 .card--depth {
+  padding-top: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   transform: translateZ(100px);
   perspective: inherit;
@@ -239,11 +241,11 @@ body {
   place-content: center;
 }
 .card--back .retro {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  text-align: left;
+  padding: 15px 20px;
+  text-align: center;
   margin: 0 auto;
+  font-size: 18px;
+  color: rgb(255, 255, 250);
 }
 
 .hue {
@@ -352,6 +354,29 @@ body {
 }
 .hue--gradient--6--back {
   background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
+}
+
+.section-heading {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: rgb(207, 19, 19);
+}
+
+.card-heading {
+  font-family: "Pacifico", cursive;
+  color: rgb(207, 19, 19);
+}
+
+.card-descr {
+  display: block;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.card--figure .card-img {
+  max-height: 243px;
+  margin: 0 auto;
 }
 
 .video-gallery {

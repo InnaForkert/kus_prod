@@ -40,7 +40,9 @@
   backface-visibility: hidden;
 }
 .card--depth {
+  padding-top: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   transform: translateZ(100px);
   perspective: inherit;
@@ -73,9 +75,11 @@
   place-content: center;
 
   .retro {
-    width: max-content;
-    text-align: left;
+    padding: 15px 20px;
+    text-align: center;
     margin: 0 auto;
+    font-size: 18px;
+    color: $white;
   }
 }
 
@@ -191,4 +195,24 @@
   &--gradient--6--back {
     background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
   }
+}
+
+.section-heading {
+  font-family: $heading-font;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: $accent-color;
+}
+.card-heading {
+  font-family: $heading-font;
+  color: $accent-color;
+}
+.card-descr {
+  display: block;
+  font-family: $main-font;
+}
+.card--figure .card-img {
+  max-height: 243px;
+  margin: 0 auto;
 }
