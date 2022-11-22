@@ -67,6 +67,10 @@ body {
   margin: -1px;
 }
 
+.hidden-opacity {
+  opacity: 0;
+}
+
 .container {
   width: 100%;
   padding-inline: 20px;
@@ -540,15 +544,16 @@ section-header {
 
 .modal {
   position: absolute;
-  width: 70%;
-  height: 75vh;
-  top: 50%;
+  width: 60%;
+  height: 70vh;
+  top: 55%;
   left: 50%;
   z-index: 9999;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  padding: 28px;
+  padding: 40px;
   background-color: #fff;
+  transition: opacity 250ms;
 }
 
 .close-btn {
@@ -566,7 +571,7 @@ section-header {
 .iframe {
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 100%;
   z-index: 9999;
 }
 

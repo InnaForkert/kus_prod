@@ -680,7 +680,8 @@ const videoArray = [
 ];
 const videoGallery = document.querySelector("#videoGallery");
 const videoModal = document.querySelector("#videoModal");
-const modal = document.querySelector(".video-modal");
+const overflow = document.querySelector(".video-modal");
+const modal = document.querySelector(".modal");
 const modalIcon = document.querySelector(".modal-icon");
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
@@ -730,12 +731,14 @@ function previousVideo(e) {
     currentDiv = currentDiv.previousElementSibling;
 }
 function videoClose() {
-    modal.classList.add("visually-hidden");
+    modal.classList.add("hidden-opacity");
+    overflow.classList.add("visually-hidden");
 }
 function videoPopup(e) {
     e.preventDefault();
     videoModal.setAttribute("src", e.currentTarget.children[0].dataset.link);
-    modal.classList.remove("visually-hidden");
+    modal.classList.remove("hidden-opacity");
+    overflow.classList.remove("visually-hidden");
     currentDiv = e.currentTarget;
 }
 function handleFilter(e) {

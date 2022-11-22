@@ -172,6 +172,10 @@ body {
   overflow: hidden;
 }
 
+.hidden-opacity {
+  opacity: 0;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -669,14 +673,15 @@ section-header {
 }
 
 .modal {
-  width: 70%;
-  height: 75vh;
+  width: 60%;
+  height: 70vh;
   z-index: 9999;
   background-color: #fff;
   border-radius: 10px;
-  padding: 28px;
+  padding: 40px;
+  transition: opacity .25s;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -695,7 +700,7 @@ section-header {
 
 .iframe {
   width: 100%;
-  height: 65vh;
+  height: 100%;
   z-index: 9999;
   position: relative;
 }
