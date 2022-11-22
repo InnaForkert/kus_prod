@@ -2,8 +2,24 @@
   &-video {
     width: calc(57vw + 9px);
     height: 68vh;
+    margin-bottom: 15px;
     border-radius: 14px;
     box-shadow: 0 0 4px $black;
+  }
+  &-text {
+    padding: 2%;
+    border-radius: 0 35px;
+    width: 70%;
+
+    background-color: $main-color-transparent;
+    box-shadow: 0 0 4px $black;
+
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 20px;
+    color: $black;
+    line-height: 1.2;
+    text-align: left;
   }
 }
 

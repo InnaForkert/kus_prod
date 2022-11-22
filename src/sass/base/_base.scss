@@ -33,10 +33,14 @@ a {
 section {
   padding-block: 60px;
   padding-inline: 20px;
+  background-color: $white;
+  box-shadow: 0 0 1px $black;
+}
+section:nth-child(even) {
+  background-color: $intersection;
 }
 body {
   position: relative;
   font-family: $main-font;
   color: $black;
-  background-color: $white;
 }

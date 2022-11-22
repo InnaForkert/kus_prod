@@ -39,13 +39,18 @@ a {
 section {
   padding-block: 60px;
   padding-inline: 20px;
+  background-color: rgb(255, 255, 250);
+  box-shadow: 0 0 1px rgb(21, 13, 42);
+}
+
+section:nth-child(even) {
+  background-color: rgb(255, 225, 197);
 }
 
 body {
   position: relative;
   font-family: "Comfortaa", sans-serif;
   color: rgb(21, 13, 42);
-  background-color: rgb(255, 255, 250);
 }
 
 .visually-hidden {
@@ -127,6 +132,7 @@ body {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
+  height: 90vh;
   padding-block: 60px;
   padding-inline: 100px;
   background-image: url(../img/menu-pelmeni.jpg);
@@ -153,18 +159,6 @@ body {
   text-shadow: 1px 1px 1px black;
   text-align: left;
   background-color: rgba(255, 228, 196, 0.707);
-}
-.hero-text {
-  padding: 2%;
-  border-radius: 0 35px;
-  width: 70%;
-  background-color: rgba(255, 228, 196, 0.707);
-  font-family: "Comfortaa", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgb(21, 13, 42);
-  line-height: 1.2;
-  text-align: left;
 }
 
 .cards--grid {
@@ -626,8 +620,22 @@ html {
 .about-video {
   width: calc(57vw + 9px);
   height: 68vh;
+  margin-bottom: 15px;
   border-radius: 14px;
   box-shadow: 0 0 4px rgb(21, 13, 42);
+}
+.about-text {
+  padding: 2%;
+  border-radius: 0 35px;
+  width: 70%;
+  background-color: rgba(255, 228, 196, 0.707);
+  box-shadow: 0 0 4px rgb(21, 13, 42);
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(21, 13, 42);
+  line-height: 1.2;
+  text-align: left;
 }
 
 #aboutus {

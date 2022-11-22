@@ -143,13 +143,18 @@ a {
 }
 
 section {
+  background-color: #fffffa;
   padding-block: 60px;
   padding-inline: 20px;
+  box-shadow: 0 0 1px #150d2a;
+}
+
+section:nth-child(2n) {
+  background-color: #ffe1c5;
 }
 
 body {
   color: #150d2a;
-  background-color: #fffffa;
   font-family: Comfortaa, sans-serif;
   position: relative;
 }
@@ -232,6 +237,7 @@ body {
 }
 
 .hero {
+  height: 90vh;
   background-image: url("menu-pelmeni.21f98956.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -264,19 +270,6 @@ body {
   padding: 24px;
   font-family: Pacifico, cursive;
   font-size: 54px;
-}
-
-.hero-text {
-  width: 70%;
-  color: #150d2a;
-  text-align: left;
-  background-color: #ffe4c4b4;
-  border-radius: 0 35px;
-  padding: 2%;
-  font-family: Comfortaa, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 .cards--grid {
@@ -757,6 +750,21 @@ body, html {
   width: calc(57vw + 9px);
   height: 68vh;
   border-radius: 14px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 4px #150d2a;
+}
+
+.about-text {
+  width: 70%;
+  color: #150d2a;
+  text-align: left;
+  background-color: #ffe4c4b4;
+  border-radius: 0 35px;
+  padding: 2%;
+  font-family: Comfortaa, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   box-shadow: 0 0 4px #150d2a;
 }
 

@@ -5,6 +5,8 @@
   flex-direction: column-reverse;
   justify-content: space-around;
 
+  height: 90vh;
+
   padding-block: 60px;
   padding-inline: 100px;
   background-image: url(../img/menu-pelmeni.jpg);
@@ -35,20 +37,5 @@
     text-align: left;
 
     background-color: $main-color-transparent;
-  }
-
-  &-text {
-    padding: 2%;
-    border-radius: 0 35px;
-    width: 70%;
-
-    background-color: $main-color-transparent;
-
-    font-family: $main-font;
-    font-weight: 500;
-    font-size: 20px;
-    color: $black;
-    line-height: 1.2;
-    text-align: left;
   }
 }
