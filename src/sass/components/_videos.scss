@@ -1,9 +1,9 @@
 .video-gallery {
   position: relative;
+  left: 12%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -12,9 +12,9 @@
   overflow: hidden;
   margin: 10px 1%;
   min-width: 320px;
-  max-width: 580px;
-  max-height: 360px;
-  width: 48%;
+  max-width: 350px;
+  max-height: 190px;
+  width: 32%;
   background: #000;
   cursor: pointer;
 }
@@ -33,7 +33,7 @@
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .video-gallery .gallery-item .gallery-item-caption,
@@ -112,22 +112,6 @@
   cursor: pointer;
 }
 
-// .hero {
-//   background: url(../../../img/products/menu-pelmeni.jpg);
-// }
-.hero-img {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-}
-
-.hero {
-  margin-bottom: 50px;
-  position: relative;
-  text-align: center;
-}
-
 section-header {
   text-align: center;
 
@@ -143,15 +127,15 @@ section-header {
 .video-filter {
   position: absolute;
   left: 0;
-  top: 100px;
+  top: 200px;
   background-color: tomato;
-  width: 150px;
+  width: 200px;
   border-radius: 0 20px 20px 0;
 }
 .filter-item {
-  font-size: 25px;
+  font-size: 16px;
   text-align: center;
-  width: 140px;
+  width: 180px;
   background-color: beige;
   padding: 15px;
   transition: background-color 250ms ease-in-out, width 250ms ease-in-out;

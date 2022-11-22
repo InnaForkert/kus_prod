@@ -535,30 +535,30 @@ function hmrAcceptRun(bundle, id) {
 const videoArray = [
     {
         id: 1,
-        img: new URL(require("c6581dcf35d43f24")),
+        img: "https://i9.ytimg.com/vi/sleryK4X4S8/maxresdefault.jpg?v=63617803&sqp=CNT39JsG&rs=AOn4CLAA93NPRCYs6D3yAPI2aoInKXzy-w",
         alt: "Відео-рецепт приготування пельменів",
         link: "https://www.youtube.com/embed/sleryK4X4S8",
         heading: "Пельмені",
-        subheading: "Найсмачніший рецепт",
+        subheading: "ІДЕАЛЬНЕ тісто + соковита начинка❗Домашні пельмені ❗",
         category: "1"
     },
     {
         id: 2,
-        img: new URL(require("c6581dcf35d43f24")),
-        alt: "Відео-рецепт приготування хінкалі",
-        link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
-        heading: "Пельмені",
-        subheading: "Найсмачніший рецепт",
+        img: "https://i9.ytimg.com/vi_webp/mB0RmAnJuXU/maxresdefault.webp?v=637a05af&sqp=CID69JsG&rs=AOn4CLBWZax5FOVo1jjwcEzZNpswQHyPog",
+        alt: "Відео-рецепт приготування фаршированих курячих стегон",
+        link: "https://www.youtube.com/embed/mB0RmAnJuXU",
+        heading: "Фаршировані Стегенця",
+        subheading: "\uD83C\uDF57Бюджетно та по-Святковому \uD83C\uDF84",
         category: "2"
     },
     {
         id: 3,
-        img: new URL(require("c6581dcf35d43f24")),
+        img: "https://i9.ytimg.com/vi_webp/cxQhBzr7Cvk/maxresdefault.webp?v=63487248&sqp=CID69JsG&rs=AOn4CLBsUiS_se0Qcie05RiYzz91837zAw",
         alt: "Відео-рецепт приготування хінкалі",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Пельмені",
-        subheading: "Найсмачніший рецепт",
-        category: "3"
+        link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
+        heading: "\uD83D\uDD34ХІНКАЛІ на вашій кухні",
+        subheading: "Грузинська смакота з Українським акцентом\uD83D\uDC9B\uD83D\uDC99",
+        category: "1"
     },
     {
         id: 4,
@@ -605,7 +605,7 @@ function createVideos(arr) {
                 <div class="gallery-item-caption">
                   <div>
                     <h2>${video.heading}</h2>
-                    <p><${video.subheading}/p>
+                    <p><${video.subheading}</p>
                   </div>
                 </div>
               </div>`;
