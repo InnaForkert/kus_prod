@@ -562,12 +562,75 @@ const videoArray = [
     },
     {
         id: 4,
-        img: new URL(require("c6581dcf35d43f24")),
-        alt: "Відео-рецепт приготування хінкалі",
-        link: "https://www.youtube.com/embed/sleryK4X4S8",
-        heading: "Пельмені",
-        subheading: "Найсмачніший рецепт",
+        img: "https://i9.ytimg.com/vi/f00Nm0q9Q5w/maxresdefault.jpg?v=6335f00e&sqp=CISB9ZsG&rs=AOn4CLAlF2LyzyiochDoA8xPlX1jccI3VA",
+        alt: "Відео-рецепт приготування гарбузового супу",
+        link: "https://www.youtube.com/embed/f00Nm0q9Q5w",
+        heading: "\uD83E\uDDE1Найяскравіший СУП цієї ОСЕНІ",
+        subheading: "\uD83C\uDF42/ pumpkin soup\uD83E\uDD58",
+        category: "3"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+        alt: "Відео-рецепт приготування штрулів",
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1"
+    },
+    {
+        id: 6,
+        img: "https://i9.ytimg.com/vi/Bz5lxckxeoo/maxresdefault.jpg?v=62f6b211&sqp=CNyF9ZsG&rs=AOn4CLC7g12-gdxuGuQiQNHbzzzLWQNGFg",
+        alt: "ТОП 5 Найкрасивіших булочок",
+        link: "https://www.youtube.com/embed/Bz5lxckxeoo",
+        heading: "ТОП 5 Найкрасивіших булочок",
+        subheading: "\uD83E\uDD68Проста та зручна формовка",
         category: "4"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+        alt: "Відео-рецепт приготування штрулів",
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+        alt: "Відео-рецепт приготування штрулів",
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+        alt: "Відео-рецепт приготування штрулів",
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+        alt: "Відео-рецепт приготування штрулів",
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1"
+    },
+    {
+        id: 55,
+        img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
+        alt: "Відео-відгук на морозильну камеру Vestfrost",
+        link: "https://www.youtube.com/embed/ZWA_FzCjnI0",
+        heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
+        subheading: "Чесний відгук",
+        category: "7"
     }
 ];
 console.log(videoArray[0].img);
@@ -605,7 +668,7 @@ function createVideos(arr) {
                 <div class="gallery-item-caption">
                   <div>
                     <h2>${video.heading}</h2>
-                    <p><${video.subheading}</p>
+                    <p>${video.subheading}</p>
                   </div>
                 </div>
               </div>`;
@@ -636,43 +699,6 @@ function handleFilter(e) {
     currentFilter = e.target;
     currentFilter.classList.add("active-filter");
 }
-
-},{"c6581dcf35d43f24":"78qdF"}],"78qdF":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("eXSSr") + "menu-hinkali.9f3ec163.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
 
 },{}]},["2a4br","7n5Iu"], "7n5Iu", "parcelRequire8436")
 

@@ -28,12 +28,75 @@ const videoArray = [
   },
   {
     id: 4,
-    img: new URL("../img/menu-hinkali.jpg", import.meta.url),
-    alt: "Відео-рецепт приготування хінкалі",
-    link: "https://www.youtube.com/embed/sleryK4X4S8",
-    heading: "Пельмені",
-    subheading: "Найсмачніший рецепт",
+    img: "https://i9.ytimg.com/vi/f00Nm0q9Q5w/maxresdefault.jpg?v=6335f00e&sqp=CISB9ZsG&rs=AOn4CLAlF2LyzyiochDoA8xPlX1jccI3VA",
+    alt: "Відео-рецепт приготування гарбузового супу",
+    link: "https://www.youtube.com/embed/f00Nm0q9Q5w",
+    heading: "🧡Найяскравіший СУП цієї ОСЕНІ",
+    subheading: "🍂/ pumpkin soup🥘",
+    category: "3",
+  },
+  {
+    id: 5,
+    img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+    alt: "Відео-рецепт приготування штрулів",
+    link: "https://www.youtube.com/embed/VwI54d-rThQ",
+    heading: "Штрулі",
+    subheading: "НАПІВФАБРИКАТИ для особливого випадку 🥟Як усе встигнути 👨‍🍳",
+    category: "1",
+  },
+  {
+    id: 6,
+    img: "https://i9.ytimg.com/vi/Bz5lxckxeoo/maxresdefault.jpg?v=62f6b211&sqp=CNyF9ZsG&rs=AOn4CLC7g12-gdxuGuQiQNHbzzzLWQNGFg",
+    alt: "ТОП 5 Найкрасивіших булочок",
+    link: "https://www.youtube.com/embed/Bz5lxckxeoo",
+    heading: "ТОП 5 Найкрасивіших булочок",
+    subheading: "🥨Проста та зручна формовка",
     category: "4",
+  },
+  {
+    id: 5,
+    img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+    alt: "Відео-рецепт приготування штрулів",
+    link: "https://www.youtube.com/embed/VwI54d-rThQ",
+    heading: "Штрулі",
+    subheading: "НАПІВФАБРИКАТИ для особливого випадку 🥟Як усе встигнути 👨‍🍳",
+    category: "1",
+  },
+  {
+    id: 5,
+    img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+    alt: "Відео-рецепт приготування штрулів",
+    link: "https://www.youtube.com/embed/VwI54d-rThQ",
+    heading: "Штрулі",
+    subheading: "НАПІВФАБРИКАТИ для особливого випадку 🥟Як усе встигнути 👨‍🍳",
+    category: "1",
+  },
+  {
+    id: 5,
+    img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+    alt: "Відео-рецепт приготування штрулів",
+    link: "https://www.youtube.com/embed/VwI54d-rThQ",
+    heading: "Штрулі",
+    subheading: "НАПІВФАБРИКАТИ для особливого випадку 🥟Як усе встигнути 👨‍🍳",
+    category: "1",
+  },
+  {
+    id: 5,
+    img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
+    alt: "Відео-рецепт приготування штрулів",
+    link: "https://www.youtube.com/embed/VwI54d-rThQ",
+    heading: "Штрулі",
+    subheading: "НАПІВФАБРИКАТИ для особливого випадку 🥟Як усе встигнути 👨‍🍳",
+    category: "1",
+  },
+  {
+    id: 55,
+    img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
+    alt: "Відео-відгук на морозильну камеру Vestfrost",
+    link: "https://www.youtube.com/embed/ZWA_FzCjnI0",
+    heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
+    subheading: "Чесний відгук",
+    category: "7",
   },
 ];
 console.log(videoArray[0].img);
@@ -76,7 +139,7 @@ function createVideos(arr) {
                 <div class="gallery-item-caption">
                   <div>
                     <h2>${video.heading}</h2>
-                    <p><${video.subheading}</p>
+                    <p>${video.subheading}</p>
                   </div>
                 </div>
               </div>`;
