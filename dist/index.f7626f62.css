@@ -750,7 +750,7 @@ body, html {
   width: calc(57vw + 9px);
   height: 68vh;
   border-radius: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   box-shadow: 0 0 4px #150d2a;
 }
 

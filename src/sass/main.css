@@ -620,7 +620,7 @@ html {
 .about-video {
   width: calc(57vw + 9px);
   height: 68vh;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border-radius: 14px;
   box-shadow: 0 0 4px rgb(21, 13, 42);
 }

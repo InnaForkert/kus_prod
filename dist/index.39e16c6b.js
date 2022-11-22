@@ -536,16 +536,14 @@ const videoArray = [
     {
         id: 1,
         img: "https://i9.ytimg.com/vi/sleryK4X4S8/maxresdefault.jpg?v=63617803&sqp=CNT39JsG&rs=AOn4CLAA93NPRCYs6D3yAPI2aoInKXzy-w",
-        alt: "Відео-рецепт приготування пельменів",
         link: "https://www.youtube.com/embed/sleryK4X4S8",
         heading: "Пельмені",
         subheading: "ІДЕАЛЬНЕ тісто + соковита начинка❗Домашні пельмені ❗",
-        category: "1"
+        category: "1, 2"
     },
     {
         id: 2,
         img: "https://i9.ytimg.com/vi_webp/mB0RmAnJuXU/maxresdefault.webp?v=637a05af&sqp=CID69JsG&rs=AOn4CLBWZax5FOVo1jjwcEzZNpswQHyPog",
-        alt: "Відео-рецепт приготування фаршированих курячих стегон",
         link: "https://www.youtube.com/embed/mB0RmAnJuXU",
         heading: "Фаршировані Стегенця",
         subheading: "\uD83C\uDF57Бюджетно та по-Святковому \uD83C\uDF84",
@@ -554,16 +552,14 @@ const videoArray = [
     {
         id: 3,
         img: "https://i9.ytimg.com/vi_webp/cxQhBzr7Cvk/maxresdefault.webp?v=63487248&sqp=CID69JsG&rs=AOn4CLBsUiS_se0Qcie05RiYzz91837zAw",
-        alt: "Відео-рецепт приготування хінкалі",
         link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
         heading: "\uD83D\uDD34ХІНКАЛІ на вашій кухні",
         subheading: "Грузинська смакота з Українським акцентом\uD83D\uDC9B\uD83D\uDC99",
-        category: "1"
+        category: "1, 2"
     },
     {
         id: 4,
         img: "https://i9.ytimg.com/vi/f00Nm0q9Q5w/maxresdefault.jpg?v=6335f00e&sqp=CISB9ZsG&rs=AOn4CLAlF2LyzyiochDoA8xPlX1jccI3VA",
-        alt: "Відео-рецепт приготування гарбузового супу",
         link: "https://www.youtube.com/embed/f00Nm0q9Q5w",
         heading: "\uD83E\uDDE1Найяскравіший СУП цієї ОСЕНІ",
         subheading: "\uD83C\uDF42/ pumpkin soup\uD83E\uDD58",
@@ -572,68 +568,116 @@ const videoArray = [
     {
         id: 5,
         img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        alt: "Відео-рецепт приготування штрулів",
         link: "https://www.youtube.com/embed/VwI54d-rThQ",
         heading: "Штрулі",
         subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1"
+        category: "1, 2"
     },
     {
         id: 6,
         img: "https://i9.ytimg.com/vi/Bz5lxckxeoo/maxresdefault.jpg?v=62f6b211&sqp=CNyF9ZsG&rs=AOn4CLC7g12-gdxuGuQiQNHbzzzLWQNGFg",
-        alt: "ТОП 5 Найкрасивіших булочок",
         link: "https://www.youtube.com/embed/Bz5lxckxeoo",
         heading: "ТОП 5 Найкрасивіших булочок",
         subheading: "\uD83E\uDD68Проста та зручна формовка",
-        category: "4"
+        category: "4, 5"
     },
     {
-        id: 5,
-        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        alt: "Відео-рецепт приготування штрулів",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Штрулі",
-        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1"
+        id: 7,
+        img: "https://i9.ytimg.com/vi_webp/VVMcesPAWiM/maxresdefault.webp?v=62e20f72&sqp=COia9ZsG&rs=AOn4CLDGO5HK5vt0JKdjGV01WM9p99oWow",
+        link: "https://www.youtube.com/embed/VVMcesPAWiM",
+        heading: "\uD83D\uDD34ГОЛУБЦІ",
+        subheading: "Всі тонкощі приготування та ТОП 3 способи закрутки (швидко і просто)❗",
+        category: "1, 2"
     },
     {
-        id: 5,
-        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        alt: "Відео-рецепт приготування штрулів",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Штрулі",
-        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1"
+        id: 8,
+        img: "https://i9.ytimg.com/vi_webp/k412HWe9vFQ/maxresdefault.webp?v=62cb28c2&sqp=COia9ZsG&rs=AOn4CLDWeaakS6ojCqfHzip4r1Z-Gc2_Kg",
+        link: "https://www.youtube.com/embed/k412HWe9vFQ",
+        heading: "Ласуй, та Не Думай про Калорії ❗",
+        subheading: "Корисний Перекус, що можна взяти з собою в дорогу",
+        category: "5"
     },
     {
-        id: 5,
-        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        alt: "Відео-рецепт приготування штрулів",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Штрулі",
-        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1"
+        id: 9,
+        img: "https://i9.ytimg.com/vi_webp/WtE1Et_gM8Y/maxresdefault.webp?v=629265c2&sqp=CJSd9ZsG&rs=AOn4CLDoJSYkydRtFdN5g9U7GtjHCwiGbA",
+        link: "https://www.youtube.com/embed/WtE1Et_gM8Y",
+        heading: "ХАЧАПУРІ",
+        subheading: "Експрес ХАЧАПУРІ за 10 хвилин\uD83C\uDF55\uD83E\uDD6E",
+        category: "2, 4"
     },
     {
-        id: 5,
-        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        alt: "Відео-рецепт приготування штрулів",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Штрулі",
-        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1"
+        id: 10,
+        img: "https://i9.ytimg.com/vi_webp/TZiPAKqxioY/maxresdefault.webp?v=627c2650&sqp=CMCf9ZsG&rs=AOn4CLCja8CddqHkJeE4wUH86QDtyC7YKQ",
+        link: "https://www.youtube.com/embed/TZiPAKqxioY",
+        heading: "\uD83D\uDD34ТОП 3 рецепти як смачно приготувати курячі сердечка",
+        subheading: "НИЗЬКОКАЛОРІЙНІША частина курки.\uD83C\uDF57",
+        category: "2"
     },
     {
-        id: 55,
+        id: 11,
+        img: "https://i9.ytimg.com/vi/0mqnbl613uM/maxresdefault.jpg?v=626ed71e&sqp=CMCf9ZsG&rs=AOn4CLCrBrCRlHEPGjVYBshqFp3M76gBeg",
+        link: "https://www.youtube.com/embed/0mqnbl613uM",
+        heading: "Курячий рулет з Клюквою\uD83C\uDF52",
+        subheading: "Неймовірна СМАКОТА!",
+        category: "2"
+    },
+    {
+        id: 12,
+        img: "https://i9.ytimg.com/vi_webp/dGJ51V5OPy0/maxresdefault.webp?v=6262ba38&sqp=CMCf9ZsG&rs=AOn4CLBwfRUL7PH3dOys3D807aV6Wp2ldA",
+        link: "https://www.youtube.com/embed/dGJ51V5OPy0",
+        heading: "Привітання з ВЕЛИКОДНЕМ!",
+        subheading: "ХРИСТОС Воскрес!",
+        category: "7"
+    },
+    {
+        id: 13,
+        img: "https://i9.ytimg.com/vi_webp/XrwUxcr-RNI/maxresdefault.webp?v=625e847a&sqp=CMCf9ZsG&rs=AOn4CLBS-GTkSVQje7aFfzwzGFzeCVKHAA",
+        link: "https://www.youtube.com/embed/XrwUxcr-RNI",
+        heading: "Два СУПЕР-САЛАТИ за 5 хвилин \uD83E\uDD57",
+        subheading: "для жіночої КРАСИ та ЗДОРОВ'Я. \uD83E\uDD55\uD83C\uDF4F\uD83E\uDD6C",
+        category: "6"
+    },
+    {
+        id: 14,
+        img: "https://i9.ytimg.com/vi_webp/HF2dXaUxVnw/sddefault.webp?v=625334da&sqp=COyh9ZsG&rs=AOn4CLBd1qQXITFKfKZI-wB79cth0rEfQg",
+        link: "https://www.youtube.com/embed/HF2dXaUxVnw",
+        heading: "ТОП 3 начинки для ВАРЕНИКІВ",
+        subheading: "ТІСТО, що не розварюється\uD83E\uDD5F\uD83E\uDD5F\uD83E\uDD5F",
+        category: "1, 2"
+    },
+    {
+        id: 15,
+        img: "https://i9.ytimg.com/vi_webp/IHL9qLNiceA/maxresdefault.webp?v=624acd51&sqp=COyh9ZsG&rs=AOn4CLD9EFvmF_3T4uJ3nDyDC24xiNCrJA",
+        link: "https://www.youtube.com/embed/IHL9qLNiceA",
+        heading: "Експрес - ВІДБИВНІ без Смаження на сковороді",
+        subheading: "ШВИДКО та ЕКОНОМНО\uD83E\uDD69",
+        category: "2"
+    },
+    {
+        id: 16,
+        img: "https://i9.ytimg.com/vi_webp/6E04A_tvnEw/maxresdefault.webp?v=62430ed6&sqp=COyh9ZsG&rs=AOn4CLABqJyEEKS-xbKQtVfU3asIqp-kug",
+        link: "https://www.youtube.com/embed/6E04A_tvnEw",
+        heading: "Гречана СМАКОТА з картопляними Кльоцками\uD83E\uDD63\uD83E\uDD54",
+        subheading: "Гречаний суп із кльоцками",
+        category: "3"
+    },
+    {
+        id: 17,
+        img: "https://i9.ytimg.com/vi/P0_DtB_GXuQ/maxresdefault.jpg?v=620e5bf9&sqp=COyh9ZsG&rs=AOn4CLAy4xEF42gK4TelXvV1S7DLc4twfw",
+        link: "https://www.youtube.com/embed/P0_DtB_GXuQ",
+        heading: "\uD83C\uDF4A\uD83C\uDF4BЦитрусові цукати",
+        subheading: "випічка на ВЕЛИКДЕНЬ \uD83C\uDF4A\uD83C\uDF4B",
+        category: "5"
+    },
+    {
+        id: 18,
         img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
-        alt: "Відео-відгук на морозильну камеру Vestfrost",
         link: "https://www.youtube.com/embed/ZWA_FzCjnI0",
         heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
         subheading: "Чесний відгук",
         category: "7"
     }
 ];
-console.log(videoArray[0].img);
 const videoGallery = document.querySelector("#videoGallery");
 const videoModal = document.querySelector("#videoModal");
 const modal = document.querySelector(".video-modal");
@@ -654,7 +698,7 @@ filters.forEach((filter)=>filter.addEventListener("click", filterVideos));
 function filterVideos(e) {
     const filteredArray = [
         ...videoArray
-    ].filter((video)=>video.category === e.target.dataset.category);
+    ].filter((video)=>video.category.includes(e.target.dataset.category));
     createVideos(filteredArray);
 }
 function createVideos(arr) {
@@ -662,7 +706,7 @@ function createVideos(arr) {
         return `<div class="gallery-item">
                 <img
                   src="${video.img}"
-                  alt="${video.alt}"
+                  alt="${video.subheading}"
                   data-link="${video.link}"
                 />
                 <div class="gallery-item-caption">
