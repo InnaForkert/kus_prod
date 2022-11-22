@@ -149,6 +149,7 @@ section {
 
 body {
   color: #150d2a;
+  background-color: #fffffa;
   font-family: Comfortaa, sans-serif;
   position: relative;
 }
@@ -750,6 +751,19 @@ body, html {
   width: 50px;
   height: 50px;
   opacity: .5;
+}
+
+.about-video {
+  width: calc(57vw + 9px);
+  height: 68vh;
+  border-radius: 14px;
+  box-shadow: 0 0 4px #150d2a;
+}
+
+#aboutus {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */

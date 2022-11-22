@@ -45,6 +45,7 @@ body {
   position: relative;
   font-family: "Comfortaa", sans-serif;
   color: rgb(21, 13, 42);
+  background-color: rgb(255, 255, 250);
 }
 
 .visually-hidden {
@@ -620,4 +621,17 @@ html {
   width: 50px;
   height: 50px;
   opacity: 0.5;
+}
+
+.about-video {
+  width: calc(57vw + 9px);
+  height: 68vh;
+  border-radius: 14px;
+  box-shadow: 0 0 4px rgb(21, 13, 42);
+}
+
+#aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
