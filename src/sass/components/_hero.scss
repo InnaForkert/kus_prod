@@ -1,7 +1,12 @@
 .hero {
   position: relative;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+
   padding-block: 60px;
-  text-align: center;
+  padding-inline: 100px;
   background-image: url(../img/menu-pelmeni.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,14 +22,33 @@
   }
 
   &-heading {
+    border-radius: 25px 125px 0 0;
+    padding: 24px;
+
+    width: 700px;
+
     letter-spacing: 0.1em;
-    max-width: 35%;
-    font-family: "Lobster", cursive;
+    font-family: $heading-font;
     font-size: 54px;
-    color: rgb(195, 60, 36);
+    color: $accent-color;
     text-shadow: 1px 1px 1px black;
-    background-color: bisque;
-    border-radius: 25px;
-    padding: 15px;
+    text-align: left;
+
+    background-color: $main-color-transparent;
+  }
+
+  &-text {
+    padding: 2%;
+    border-radius: 0 35px;
+    width: 70%;
+
+    background-color: $main-color-transparent;
+
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 20px;
+    color: $black;
+    line-height: 1.2;
+    text-align: left;
   }
 }
