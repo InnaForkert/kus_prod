@@ -162,8 +162,12 @@ const modalIcon = document.querySelector(".modal-icon");
 const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
 const filters = document.querySelectorAll(".filter-item");
+const right = document.querySelector(".right");
+const left = document.querySelector(".left");
 let currentFilter;
 let currentDiv;
+let currentPageStart = 0;
+let currentPageEnd = 6;
 
 createVideos(videoArray);
 
@@ -174,6 +178,20 @@ modalIcon.addEventListener("click", videoClose);
 next.addEventListener("click", nextVideo);
 previous.addEventListener("click", previousVideo);
 filters.forEach((filter) => filter.addEventListener("click", filterVideos));
+right.addEventListener("click", nextPage);
+left.addEventListener("click", previousPage);
+
+function nextPage() {
+  currentPageStart += 6;
+  currentPageEnd += 6;
+  createVideos(videoArray);
+}
+
+function previousPage() {
+  currentPageStart -= 6;
+  currentPageEnd -= 6;
+  createVideos(videoArray);
+}
 
 function filterVideos(e) {
   const filteredArray = [...videoArray].filter((video) =>
@@ -183,20 +201,22 @@ function filterVideos(e) {
 }
 
 function createVideos(arr) {
-  const marcup = arr.map((video) => {
-    return `<div class="gallery-item">
-                <img
-                  src="${video.img}"
-                  alt="${video.subheading}"
-                  data-link="${video.link}"
-                />
-                <div class="gallery-item-caption">
-                  <div>
-                    <h2>${video.heading}</h2>
-                    <p>${video.subheading}</p>
+  const marcup = arr.map((video, idx) => {
+    if (idx >= currentPageStart && idx < currentPageEnd) {
+      return `<div class="gallery-item">
+                  <img
+                    src="${video.img}"
+                    alt="${video.subheading}"
+                    data-link="${video.link}"
+                  />
+                  <div class="gallery-item-caption">
+                    <div>
+                      <h2>${video.heading}</h2>
+                      <p>${video.subheading}</p>
+                    </div>
                   </div>
-                </div>
-              </div>`;
+                </div>`;
+    }
   });
   videoGallery.innerHTML = marcup.join("");
   const videos = document.querySelectorAll(".gallery-item");

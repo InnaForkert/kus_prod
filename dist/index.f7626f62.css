@@ -660,6 +660,16 @@ section-header {
   background-color: #0000;
 }
 
+.left {
+  position: absolute;
+  left: 330px;
+}
+
+.right {
+  position: absolute;
+  right: 100px;
+}
+
 .overflow {
   width: 100%;
   height: 100%;

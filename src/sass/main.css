@@ -530,6 +530,16 @@ section-header {
   width: 150px;
 }
 
+.left {
+  position: absolute;
+  left: 330px;
+}
+
+.right {
+  position: absolute;
+  right: 100px;
+}
+
 .overflow {
   position: fixed;
   top: 0;
