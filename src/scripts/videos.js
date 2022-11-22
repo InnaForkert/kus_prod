@@ -222,6 +222,7 @@ function previousVideo(e) {
 function videoClose() {
   modal.classList.add("hidden-opacity");
   overflow.classList.add("visually-hidden");
+  document.removeEventListener("keydown", videoKeyHandler);
 }
 
 function videoPopup(e) {
@@ -230,6 +231,17 @@ function videoPopup(e) {
   modal.classList.remove("hidden-opacity");
   overflow.classList.remove("visually-hidden");
   currentDiv = e.currentTarget;
+  document.addEventListener("keydown", videoKeyHandler);
+}
+
+function videoKeyHandler(e) {
+  if (e.key === "Escape") {
+    videoClose();
+  } else if (e.key === "ArrowRight") {
+    nextVideo();
+  } else if (e.key === "ArrowRight") {
+    previousVideo();
+  }
 }
 
 function handleFilter(e) {

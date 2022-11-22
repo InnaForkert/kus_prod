@@ -19,23 +19,33 @@
   z-index: 9999;
 
   transform: translate(-50%, -50%);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 40px;
-  background-color: #fff;
+  background-color: $white;
+  box-shadow: 0 0 2px $black;
 
-  transition: opacity 250ms;
+  transition: opacity 400ms;
 }
 
 .close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 16px;
+  right: 16px;
   padding: 0;
   display: block;
   width: 20px;
   height: 20px;
   border: none;
   background: none;
+  cursor: none;
+  font-size: 20px;
+  color: $black;
+  transition: color 300ms;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .iframe {
@@ -43,4 +53,27 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
+  border-radius: 20px;
+  box-shadow: 0 0 4px $black;
+  outline: none;
+  border: none;
+}
+
+.video-controller {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $black;
+  transition: color 300ms;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+#next {
+  position: absolute;
+  right: 40px;
 }
