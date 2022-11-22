@@ -168,6 +168,7 @@ let currentFilter;
 let currentDiv;
 let currentPageStart = 0;
 let currentPageEnd = 6;
+let filteredArray = [];
 
 createVideos(videoArray);
 
@@ -184,7 +185,9 @@ left.addEventListener("click", previousPage);
 function nextPage() {
   currentPageStart += 6;
   currentPageEnd += 6;
-  createVideos(videoArray);
+  if (filteredArray.length > 0) createVideos(filteredArray);
+  else createVideos(videoArray);
+  console.log();
 }
 
 function previousPage() {
@@ -194,8 +197,9 @@ function previousPage() {
 }
 
 function filterVideos(e) {
-  const filteredArray = [...videoArray].filter((video) =>
-    video.category.includes(e.target.dataset.category)
+  currentFilter = e.target;
+  filteredArray = [...videoArray].filter((video) =>
+    video.category.includes(currentFilter.dataset.category)
   );
   createVideos(filteredArray);
 }
@@ -221,6 +225,17 @@ function createVideos(arr) {
   videoGallery.innerHTML = marcup.join("");
   const videos = document.querySelectorAll(".gallery-item");
   videos.forEach((video) => video.addEventListener("click", videoPopup));
+  if (currentPageStart > 0) left.classList.remove("visually-hidden");
+  else left.classList.add("visually-hidden");
+  if (filteredArray.length > 0) {
+    if (currentPageEnd >= filteredArray.length)
+      right.classList.add("visually-hidden");
+    else right.classList.remove("visually-hidden");
+  } else {
+    if (currentPageEnd >= videoArray.length)
+      right.classList.add("visually-hidden");
+    else right.classList.remove("visually-hidden");
+  }
 }
 
 function nextVideo(e) {
