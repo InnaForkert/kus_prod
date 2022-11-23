@@ -185,7 +185,7 @@ body {
 
 .card {
   height: 21rem;
-  width: 30rem;
+  width: 30vw;
   transition: all 1s ease;
   transform-style: preserve-3d;
   box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
@@ -246,7 +246,7 @@ body {
   padding: 15px 20px;
   text-align: center;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(255, 255, 250);
 }
 
@@ -667,23 +667,34 @@ html {
 
 .about-video {
   width: calc(57vw + 9px);
-  height: 68vh;
+  height: 67vh;
   margin-bottom: 25px;
   border-radius: 14px;
   box-shadow: 0 0 4px rgb(21, 13, 42);
 }
 .about-text {
+  overflow: hidden;
   padding: 2%;
+  padding-bottom: 0;
+  padding-top: 15px;
+  height: 67vh;
   border-radius: 0 35px;
-  width: 70%;
+  width: 38%;
   background-color: rgba(255, 228, 196, 0.707);
   box-shadow: 0 0 4px rgb(21, 13, 42);
   font-family: "Comfortaa", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(21, 13, 42);
   line-height: 1.2;
   text-align: left;
+}
+.about-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 15px;
+  padding-inline: 35px;
 }
 
 #aboutus {

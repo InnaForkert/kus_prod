@@ -18,7 +18,7 @@
 
 .card {
   height: 21rem;
-  width: 30rem;
+  width: 30vw;
   transition: all 1s ease;
   transform-style: preserve-3d;
   box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
@@ -78,7 +78,7 @@
     padding: 15px 20px;
     text-align: center;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 16px;
     color: $white;
   }
 }

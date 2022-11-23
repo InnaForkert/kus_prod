@@ -297,7 +297,7 @@ body {
 
 .card {
   height: 21rem;
-  width: 30rem;
+  width: 30vw;
   transform-style: preserve-3d;
   border-radius: 3rem;
   transition: all 1s;
@@ -360,7 +360,7 @@ body {
   color: #fffffa;
   margin: 0 auto;
   padding: 15px 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hue--gradient {
@@ -798,24 +798,34 @@ body, html {
 
 .about-video {
   width: calc(57vw + 9px);
-  height: 68vh;
+  height: 67vh;
   border-radius: 14px;
   margin-bottom: 25px;
   box-shadow: 0 0 4px #150d2a;
 }
 
 .about-text {
-  width: 70%;
+  height: 67vh;
+  width: 38%;
   color: #150d2a;
   text-align: left;
   background-color: #ffe4c4b4;
   border-radius: 0 35px;
-  padding: 2%;
+  padding: 15px 2% 0;
   font-family: Comfortaa, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
+  overflow: hidden;
   box-shadow: 0 0 4px #150d2a;
+}
+
+.about-flex {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 15px;
+  padding-inline: 35px;
+  display: flex;
 }
 
 #aboutus {
