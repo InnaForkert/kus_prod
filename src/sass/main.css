@@ -831,4 +831,17 @@ html {
   100% {
     background-positon-x: 0px;
   }
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 255, 250);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgb(255, 255, 250);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(207, 19, 19);
 }/*# sourceMappingURL=main.css.map */
