@@ -688,6 +688,7 @@ const next = document.querySelector("#next");
 const filters = document.querySelectorAll(".filter-item");
 const right = document.querySelector(".right");
 const left = document.querySelector(".left");
+const allVideosBtn = document.querySelector("#allVideos");
 let currentFilter;
 let currentDiv;
 let currentPageStart = 0;
@@ -703,6 +704,13 @@ previous.addEventListener("click", previousVideo);
 filters.forEach((filter)=>filter.addEventListener("click", filterVideos));
 right.addEventListener("click", nextPage);
 left.addEventListener("click", previousPage);
+allVideosBtn.addEventListener("click", showAllVideos);
+function showAllVideos() {
+    filteredArray = [];
+    currentPageEnd = 6;
+    currentPageStart = 0;
+    createVideos(videoArray);
+}
 function nextPage() {
     currentPageStart += 6;
     currentPageEnd += 6;
