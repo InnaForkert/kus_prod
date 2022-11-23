@@ -517,6 +517,7 @@ body {
 .video-gallery {
   max-width: 1200px;
   text-align: center;
+  min-height: 400px;
   flex-wrap: wrap;
   display: flex;
   position: relative;
