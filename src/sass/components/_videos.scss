@@ -128,7 +128,7 @@ section-header {
   position: absolute;
   left: 0;
   top: 200px;
-  background-color: tomato;
+  background-color: $accent-color;
   width: 200px;
   border-radius: 0 20px 20px 0;
 }
@@ -136,7 +136,7 @@ section-header {
   font-size: 16px;
   text-align: center;
   width: 180px;
-  background-color: beige;
+  background-color: $main-color;
   padding: 15px;
   transition: background-color 250ms ease-in-out, width 250ms ease-in-out;
   border-radius: 0 50px 50px 0;

@@ -146,6 +146,9 @@ section {
   background-color: #fffffa;
   padding-block: 60px;
   padding-inline: 20px;
+}
+
+section:not(:last-child) {
   box-shadow: 0 0 1px #150d2a;
 }
 
@@ -634,7 +637,7 @@ section-header {
 
 .video-filter {
   width: 200px;
-  background-color: tomato;
+  background-color: #cf1313;
   border-radius: 0 20px 20px 0;
   position: absolute;
   top: 200px;
@@ -644,7 +647,7 @@ section-header {
 .filter-item {
   text-align: center;
   width: 180px;
-  background-color: beige;
+  background-color: bisque;
   border-radius: 0 50px 50px 0;
   padding: 15px;
   font-size: 16px;
@@ -818,6 +821,124 @@ body, html {
   flex-direction: column;
   align-items: center;
   display: flex;
+}
+
+.footer {
+  min-height: 100px;
+  background: #cf1313;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  padding: 20px 50px;
+  display: flex;
+  position: relative;
+}
+
+.social-icon, .menu {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0 0 20px;
+  display: flex;
+  position: relative;
+}
+
+.social-icon__item, .menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 2rem;
+  transition: all .5s;
+  display: inline-block;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  color: #fffffa;
+  opacity: .75;
+  margin: 0 10px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all .5s;
+  display: inline-block;
+}
+
+.menu__link:hover {
+  color: #fffffa;
+  opacity: 1;
+}
+
+.footer p {
+  color: #fffffa;
+  margin: 15px 0 10px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  width: 100%;
+  height: 100px;
+  background: url("wave.835667f6.png") 0 0 / 1000px 100px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  animation: 8s linear infinite animateWaves;
+  bottom: 0;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: .5;
+  bottom: 10px;
+  animation: 8s linear infinite animate !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: .2;
+  animation: 6s linear infinite animateWaves;
+  bottom: 15px;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: .7;
+  animation: 6s linear infinite animate;
+  bottom: 20px;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */

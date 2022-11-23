@@ -34,6 +34,8 @@ section {
   padding-block: 60px;
   padding-inline: 20px;
   background-color: $white;
+}
+section:not(:last-child) {
   box-shadow: 0 0 1px $black;
 }
 section:nth-child(even) {
