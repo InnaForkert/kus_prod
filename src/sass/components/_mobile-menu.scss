@@ -1,0 +1,21 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  z-index: 9999;
+  background-color: $main-color;
+
+  &-list {
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &-link {
+    color: $black;
+  }
+}

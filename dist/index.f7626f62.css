@@ -966,4 +966,26 @@ body, html {
   background-color: #cf1313;
 }
 
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: bisque;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu-list {
+  flex-direction: column;
+  gap: 40px;
+  font-size: 48px;
+  display: flex;
+}
+
+.mobile-menu-link {
+  color: #150d2a;
+}
+
 /*# sourceMappingURL=index.f7626f62.css.map */
