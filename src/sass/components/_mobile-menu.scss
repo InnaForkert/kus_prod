@@ -8,8 +8,12 @@
   z-index: 9999;
   background-color: $main-color;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   &-list {
-    font-size: 48px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -17,5 +21,27 @@
 
   &-link {
     color: $black;
+    transition: color 250ms;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: $black;
+    border: none;
+    outline: none;
+    transition: color 250ms;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }

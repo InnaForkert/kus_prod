@@ -977,15 +977,41 @@ body, html {
   left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu-list {
   flex-direction: column;
   gap: 40px;
-  font-size: 48px;
+  font-size: 30px;
   display: flex;
 }
 
 .mobile-menu-link {
   color: #150d2a;
+  transition: color .25s;
+}
+
+.mobile-menu-link:hover, .mobile-menu-link:focus {
+  color: #cf1313;
+}
+
+.mobile-menu-close {
+  color: #150d2a;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  transition: color .25s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mobile-menu-close:hover, .mobile-menu-close:focus {
+  color: #cf1313;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
