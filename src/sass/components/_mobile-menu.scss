@@ -8,6 +8,8 @@
   z-index: 9999;
   background-color: $main-color;
 
+  transition: transform 500ms;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -43,5 +45,9 @@
     &:focus {
       color: $accent-color;
     }
+  }
+
+  &-onClose {
+    transform: translateX(100%);
   }
 }
