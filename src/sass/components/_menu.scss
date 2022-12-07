@@ -18,12 +18,13 @@
 
 .card {
   width: 80vw;
-  height: 21rem;
+  height: 250px;
   transition: all 1s ease;
   transform-style: preserve-3d;
   box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: 3rem;
   @include tablet {
+    height: 21rem;
     width: 30vw;
   }
 }
@@ -47,6 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transform: translateZ(100px);
   perspective: inherit;
 }
@@ -78,11 +80,15 @@
   place-content: center;
 
   .retro {
-    padding: 15px 20px;
+    padding-inline: 10px;
     text-align: center;
     margin: 0 auto;
-    font-size: 16px;
     color: $white;
+    font-size: 10px;
+    @include tablet {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
   }
 }
 
@@ -200,13 +206,6 @@
   }
 }
 
-.section-heading {
-  font-family: $heading-font;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 50px;
-  color: $accent-color;
-}
 .card-heading {
   font-family: $heading-font;
   color: $accent-color;

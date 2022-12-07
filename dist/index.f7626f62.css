@@ -167,6 +167,20 @@ body {
   position: relative;
 }
 
+.section-heading {
+  text-align: center;
+  color: #cf1313;
+  margin-bottom: 50px;
+  font-family: Pacifico, cursive;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-heading {
+    font-size: 40px;
+  }
+}
+
 .visually-hidden {
   white-space: nowrap;
   width: 1px;
@@ -334,7 +348,7 @@ body {
 
 .card {
   width: 80vw;
-  height: 21rem;
+  height: 250px;
   transform-style: preserve-3d;
   border-radius: 3rem;
   transition: all 1s;
@@ -343,6 +357,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .card {
+    height: 21rem;
     width: 30vw;
   }
 }
@@ -365,6 +380,7 @@ body {
 .card--depth {
   perspective: inherit;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-top: 15px;
   display: flex;
@@ -402,8 +418,15 @@ body {
   text-align: center;
   color: #fffffa;
   margin: 0 auto;
-  padding: 15px 20px;
-  font-size: 16px;
+  padding-inline: 10px;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .card--back .retro {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
 }
 
 .hue--gradient {
@@ -532,14 +555,6 @@ body {
 
 .hue--gradient--6--back {
   background-image: linear-gradient(120deg, #2ad0ca, #fc4d9d, #fcce37);
-}
-
-.section-heading {
-  text-align: center;
-  color: #cf1313;
-  margin-bottom: 50px;
-  font-family: Pacifico, cursive;
-  font-size: 40px;
 }
 
 .card-heading {
