@@ -31,9 +31,11 @@ a {
   cursor: pointer;
 }
 section {
-  padding-block: 60px;
-  padding-inline: 20px;
+  padding-block: 40px;
   background-color: $white;
+  @include tablet {
+    padding-block: 60px;
+  }
 }
 section:not(:last-child) {
   box-shadow: 0 0 1px $black;

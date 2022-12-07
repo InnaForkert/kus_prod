@@ -8,7 +8,7 @@
   height: 90vh;
   width: 100vw;
 
-  padding-block: 60px;
+  padding-block: 40px;
   margin-inline: auto;
   background-image: url(../img/menu-pelmeni.jpg);
   background-repeat: no-repeat;
@@ -16,31 +16,39 @@
   background-position: center;
 
   @include tablet {
+    padding-block: 60px;
     padding-inline: 100px;
   }
 
   &-span {
     display: block;
-    font-size: 40px;
+    font-size: 24px;
     line-height: 1.4;
     margin-top: 5px;
     font-weight: 500;
     letter-spacing: normal;
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &-heading {
     border-radius: 25px 125px 0 0;
-    padding: 24px;
+    padding: 12px;
+    width: 95vw;
 
-    width: 700px;
-
+    font-size: 32px;
     letter-spacing: 0.1em;
     font-family: $heading-font;
-    font-size: 54px;
     color: $accent-color;
     text-shadow: 1px 1px 1px black;
     text-align: left;
 
     background-color: $main-color-transparent;
+    @include tablet {
+      padding: 24px;
+      font-size: 54px;
+      width: 700px;
+    }
   }
 }

@@ -144,8 +144,13 @@ a {
 
 section {
   background-color: #fffffa;
-  padding-block: 60px;
-  padding-inline: 20px;
+  padding-block: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-block: 60px;
+  }
 }
 
 section:not(:last-child) {
@@ -263,13 +268,14 @@ body {
   flex-direction: column-reverse;
   justify-content: space-around;
   margin-inline: auto;
-  padding-block: 60px;
+  padding-block: 40px;
   display: flex;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding-block: 60px;
     padding-inline: 100px;
   }
 }
@@ -277,23 +283,37 @@ body {
 .hero-span {
   letter-spacing: normal;
   margin-top: 5px;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.4;
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-span {
+    font-size: 40px;
+  }
+}
+
 .hero-heading {
-  width: 700px;
+  width: 95vw;
   letter-spacing: .1em;
   color: #cf1313;
   text-shadow: 1px 1px 1px #000;
   text-align: left;
   background-color: #ffe4c4b4;
   border-radius: 25px 125px 0 0;
-  padding: 24px;
+  padding: 12px;
   font-family: Pacifico, cursive;
-  font-size: 54px;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-heading {
+    width: 700px;
+    padding: 24px;
+    font-size: 54px;
+  }
 }
 
 .cards--grid {
@@ -656,26 +676,42 @@ section-header {
 }
 
 .videos {
+  width: 100vw;
   position: relative;
 }
 
 .video-filter {
-  width: 200px;
+  width: 150px;
   background-color: #cf1313;
   border-radius: 0 20px 20px 0;
-  position: absolute;
-  top: 170px;
+  position: sticky;
+  top: 120px;
   left: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .video-filter {
+    width: 200px;
+    position: absolute;
+    top: 170px;
+  }
+}
+
 .filter-item {
+  width: 140px;
   text-align: center;
-  width: 180px;
   background-color: bisque;
   border-radius: 0 50px 50px 0;
   padding: 15px;
-  font-size: 16px;
+  font-size: 12px;
   transition: background-color .25s ease-in-out, width .25s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-item {
+    width: 180px;
+    font-size: 16px;
+  }
 }
 
 .filter-item:hover {
