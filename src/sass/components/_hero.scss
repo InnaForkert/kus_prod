@@ -6,13 +6,18 @@
   justify-content: space-around;
 
   height: 90vh;
+  width: 100vw;
 
   padding-block: 60px;
-  padding-inline: 100px;
+  margin-inline: auto;
   background-image: url(../img/menu-pelmeni.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include tablet {
+    padding-inline: 100px;
+  }
 
   &-span {
     display: block;

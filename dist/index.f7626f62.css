@@ -255,16 +255,23 @@ body {
 
 .hero {
   height: 90vh;
+  width: 100vw;
   background-image: url("menu-pelmeni.21f98956.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column-reverse;
   justify-content: space-around;
+  margin-inline: auto;
   padding-block: 60px;
-  padding-inline: 100px;
   display: flex;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-inline: 100px;
+  }
 }
 
 .hero-span {
