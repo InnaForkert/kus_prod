@@ -1,19 +1,20 @@
 .about {
   &-video {
-    width: calc(57vw + 9px);
     height: 67vh;
     margin-bottom: 25px;
     border-radius: 14px;
     box-shadow: 0 0 4px $black;
+    width: 90vw;
+
+    @include tablet {
+      width: calc(57vw + 9px);
+    }
   }
   &-text {
     overflow: hidden;
-    padding: 2%;
-    padding-bottom: 0;
-    padding-top: 15px;
-    height: 67vh;
+    padding-block: 15px;
+    padding-inline: 15px;
     border-radius: 0 35px;
-    width: 38%;
 
     background-color: $main-color-transparent;
     box-shadow: 0 0 4px $black;
@@ -22,15 +23,26 @@
     font-weight: 500;
     font-size: 18px;
     color: $black;
-    line-height: 1.2;
     text-align: left;
+    line-height: 1.4;
+
+    @include tablet {
+      line-height: 1.2;
+      padding-bottom: 0;
+      width: 38%;
+      height: 67vh;
+    }
   }
   &-flex {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
     gap: 15px;
-    padding-inline: 35px;
+    @include tablet {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-inline: 35px;
+    }
   }
 }
 

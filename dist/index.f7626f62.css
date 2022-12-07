@@ -814,35 +814,56 @@ body, html {
 }
 
 .about-video {
-  width: calc(57vw + 9px);
   height: 67vh;
+  width: 90vw;
   border-radius: 14px;
   margin-bottom: 25px;
   box-shadow: 0 0 4px #150d2a;
 }
 
+@media screen and (min-width: 768px) {
+  .about-video {
+    width: calc(57vw + 9px);
+  }
+}
+
 .about-text {
-  height: 67vh;
-  width: 38%;
   color: #150d2a;
   text-align: left;
   background-color: #ffe4c4b4;
   border-radius: 0 35px;
-  padding: 15px 2% 0;
+  padding-block: 15px;
+  padding-inline: 15px;
   font-family: Comfortaa, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.4;
   overflow: hidden;
   box-shadow: 0 0 4px #150d2a;
 }
 
+@media screen and (min-width: 768px) {
+  .about-text {
+    width: 38%;
+    height: 67vh;
+    padding-bottom: 0;
+    line-height: 1.2;
+  }
+}
+
 .about-flex {
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
   gap: 15px;
-  padding-inline: 35px;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .about-flex {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-inline: 35px;
+  }
 }
 
 #aboutus {
