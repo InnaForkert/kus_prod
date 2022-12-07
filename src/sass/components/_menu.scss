@@ -17,12 +17,15 @@
 }
 
 .card {
+  width: 80vw;
   height: 21rem;
-  width: 30vw;
   transition: all 1s ease;
   transform-style: preserve-3d;
   box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: 3rem;
+  @include tablet {
+    width: 30vw;
+  }
 }
 
 .rotated {
