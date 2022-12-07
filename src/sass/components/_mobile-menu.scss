@@ -4,10 +4,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
-  z-index: 9999;
+  padding: 100px 60px;
+  z-index: 99;
   background-color: $main-color;
-
+  touch-action: none;
   transition: transform 500ms;
 
   @media screen and (min-width: 768px) {
@@ -24,6 +24,7 @@
   &-link {
     color: $black;
     transition: color 250ms;
+    cursor: none;
 
     &:hover,
     &:focus {
@@ -49,5 +50,46 @@
 
   &-onClose {
     transform: translateX(100%);
+  }
+
+  &-btn {
+    position: fixed;
+    top: 40px;
+    z-index: 999;
+    right: 30px;
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    padding: 8px;
+    width: 37px;
+    border-radius: 50%;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    overflow: hidden;
+
+    & svg {
+      fill: $accent-color;
+      transition: transform 600ms;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.move {
+  &-top {
+    transform: translateY(-300%);
+  }
+  &-right {
+    transform: translateX(300%);
+  }
+  &-bottom {
+    transform: translateY(300%);
+  }
+  &-left {
+    transform: translateX(-300%);
   }
 }

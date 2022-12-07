@@ -224,6 +224,16 @@ body {
   margin-left: 25px;
 }
 
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+}
+
 .nav-list {
   gap: 60px;
   margin-right: 60px;
@@ -969,9 +979,10 @@ body, html {
 .mobile-menu {
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 99;
+  touch-action: none;
   background-color: bisque;
-  padding: 40px;
+  padding: 100px 60px;
   transition: transform .5s;
   position: fixed;
   top: 0;
@@ -993,6 +1004,7 @@ body, html {
 
 .mobile-menu-link {
   color: #150d2a;
+  cursor: none;
   transition: color .25s;
 }
 
@@ -1017,6 +1029,50 @@ body, html {
 
 .mobile-menu-onClose {
   transform: translateX(100%);
+}
+
+.mobile-menu-btn {
+  z-index: 999;
+  width: 37px;
+  background-color: bisque;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 8px;
+  display: flex;
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  overflow: hidden;
+}
+
+.mobile-menu-btn svg {
+  fill: #cf1313;
+  transition: transform .6s;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.move-top {
+  transform: translateY(-300%);
+}
+
+.move-right {
+  transform: translateX(300%);
+}
+
+.move-bottom {
+  transform: translateY(300%);
+}
+
+.move-left {
+  transform: translateX(-300%);
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
