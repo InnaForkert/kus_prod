@@ -33,6 +33,7 @@ a {
 section {
   padding-block: 40px;
   background-color: $white;
+  width: 100vw;
   @include tablet {
     padding-block: 60px;
   }

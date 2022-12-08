@@ -125,11 +125,15 @@
 .video-filter {
   position: sticky;
   transform: translateX(-120%);
-  top: 119px;
+  top: 120px;
   width: 150px;
   background-color: $accent-color;
-  border-radius: 0 20px 20px 0;
+  transition: transform 400ms;
+  z-index: 9;
+  border-radius: 0 0 20px 0;
+
   @include tablet {
+    border-radius: 0 20px 20px 0;
     left: 0;
     position: absolute;
     width: 200px;
@@ -172,9 +176,10 @@
 
 .show-filter {
   position: sticky;
-  top: 126px;
+  top: 92px;
   left: 0;
-  transform: translateX(-110%);
+  z-index: 10;
+  transform: translate(-110%, 100%);
 
   padding: 5px;
 
@@ -182,4 +187,14 @@
   border-radius: 0 40% 40% 0;
   border: none;
   outline: none;
+
+  transition: transform 400ms;
+}
+
+.show {
+  transform: translate(calc(-110% + 130px), 100%);
+}
+
+.show-filter-onclick {
+  transform: translateX(-20%);
 }

@@ -143,6 +143,7 @@ a {
 }
 
 section {
+  width: 100vw;
   background-color: #fffffa;
   padding-block: 40px;
 }
@@ -225,7 +226,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   z-index: 99;
   background-color: #fffffa;
   justify-content: space-between;
@@ -696,16 +697,19 @@ body {
 
 .video-filter {
   width: 150px;
+  z-index: 9;
   background-color: #cf1313;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 0 20px;
+  transition: transform .4s;
   position: sticky;
-  top: 119px;
+  top: 120px;
   transform: translateX(-120%);
 }
 
 @media screen and (min-width: 768px) {
   .video-filter {
     width: 200px;
+    border-radius: 0 20px 20px 0;
     position: absolute;
     top: 170px;
     left: 0;
@@ -749,15 +753,25 @@ body {
 }
 
 .show-filter {
+  z-index: 10;
   background-color: #cf1313;
   border: none;
   border-radius: 0 40% 40% 0;
   outline: none;
   padding: 5px;
+  transition: transform .4s;
   position: sticky;
-  top: 126px;
+  top: 92px;
   left: 0;
-  transform: translateX(-110%);
+  transform: translate(-110%, 100%);
+}
+
+.show {
+  transform: translate(calc(130px - 110%), 100%);
+}
+
+.show-filter-onclick {
+  transform: translateX(-20%);
 }
 
 .overflow {
