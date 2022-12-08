@@ -793,25 +793,34 @@ body {
 }
 
 .modal {
-  width: 60%;
-  height: 70vh;
+  width: 85%;
+  height: 50%;
   z-index: 9999;
   background-color: #fffffa;
   border-radius: 20px;
-  padding: 40px;
   transition: opacity .4s;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 2px #150d2a;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    height: 70vh;
+    width: 60%;
+    padding: 40px;
+    top: 55%;
+  }
 }
 
 .close-btn {
   width: 20px;
   height: 20px;
   cursor: none;
-  color: #150d2a;
+  color: #fffffa;
+  z-index: 9999;
   background: none;
   border: none;
   padding: 0;
@@ -824,6 +833,7 @@ body {
 }
 
 .close-btn:hover, .close-btn:focus {
+  color: #150d2a;
   color: #cf1313;
 }
 
@@ -853,7 +863,13 @@ body {
 
 #next {
   position: absolute;
-  right: 40px;
+  right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #next {
+    right: 40px;
+  }
 }
 
 * {

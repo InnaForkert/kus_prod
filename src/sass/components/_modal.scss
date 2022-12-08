@@ -12,19 +12,24 @@
 
 .modal {
   position: absolute;
-  width: 60%;
-  height: 70vh;
-  top: 55%;
   left: 50%;
+  width: 85%;
+  height: 50%;
+  top: 60%;
   z-index: 9999;
 
   transform: translate(-50%, -50%);
   border-radius: 20px;
-  padding: 40px;
   background-color: $white;
   box-shadow: 0 0 2px $black;
 
   transition: opacity 400ms;
+  @include tablet {
+    padding: 40px;
+    top: 55%;
+    height: 70vh;
+    width: 60%;
+  }
 }
 
 .close-btn {
@@ -39,11 +44,12 @@
   background: none;
   cursor: none;
   font-size: 20px;
-  color: $black;
   transition: color 300ms;
-
+  color: $white;
+  z-index: 9999;
   &:hover,
   &:focus {
+    color: $black;
     color: $accent-color;
   }
 }
@@ -75,5 +81,8 @@
 
 #next {
   position: absolute;
-  right: 40px;
+  right: 5px;
+  @include tablet {
+    right: 40px;
+  }
 }
