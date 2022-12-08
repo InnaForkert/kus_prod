@@ -844,8 +844,11 @@ function videoClose() {
     modal.classList.add("hidden-opacity");
     overflow.classList.add("visually-hidden");
     document.removeEventListener("keydown", videoKeyHandler);
-    overflow.removeEventListener("click", videoClose);
+    overflow.removeEventListener("click", videoCloseOnOverflowClick);
     videoModal.setAttribute("src", "#");
+}
+function videoCloseOnOverflowClick(e) {
+    if (e.target === e.currentTarget) videoClose();
 }
 function videoPopup(e) {
     e.preventDefault();
@@ -854,7 +857,7 @@ function videoPopup(e) {
     overflow.classList.remove("visually-hidden");
     currentDiv = e.currentTarget;
     document.addEventListener("keydown", videoKeyHandler);
-    overflow.addEventListener("click", videoClose);
+    overflow.addEventListener("click", videoCloseOnOverflowClick);
 }
 function videoKeyHandler(e) {
     if (e.key === "Escape") videoClose();

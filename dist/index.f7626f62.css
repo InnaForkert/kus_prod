@@ -1111,7 +1111,7 @@ body, html {
 
 .mobile-menu {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 1001;
   touch-action: none;
   background-color: bisque;
