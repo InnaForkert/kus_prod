@@ -573,6 +573,10 @@ body {
   margin: 0 auto;
 }
 
+.videos {
+  height: 1536px;
+}
+
 .video-gallery {
   max-width: 1200px;
   text-align: center;
@@ -970,7 +974,6 @@ body, html {
 }
 
 .social-icon, .menu {
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
