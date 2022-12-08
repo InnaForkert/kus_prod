@@ -784,7 +784,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  z-index: 1;
+  z-index: 1004;
   background: #0003;
   transition: opacity .5s;
   position: fixed;
@@ -886,7 +886,7 @@ body, html {
   height: 30px;
   pointer-events: none;
   z-index: 9999;
-  border: 1px solid #000;
+  border: 1px solid #150d2a;
   border-radius: 100%;
   transition: all .2s ease-out;
   position: fixed;
