@@ -579,19 +579,26 @@ body {
   flex-wrap: wrap;
   display: flex;
   position: relative;
+  top: -390px;
   left: 12%;
 }
 
 .video-gallery .gallery-item {
-  min-width: 320px;
+  min-width: 50vw;
   max-width: 350px;
   max-height: 190px;
-  width: 32%;
   cursor: pointer;
   background: #000;
   margin: 10px 1%;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .video-gallery .gallery-item {
+    width: 32%;
+    min-width: 320px;
+  }
 }
 
 .video-gallery .gallery-item img {
@@ -682,14 +689,6 @@ body {
   cursor: pointer;
 }
 
-section-header {
-  text-align: center;
-  max-width: 35%;
-  margin: 0 auto;
-  top: 150px;
-  left: 100px;
-}
-
 .videos {
   width: 100vw;
   position: relative;
@@ -700,8 +699,8 @@ section-header {
   background-color: #cf1313;
   border-radius: 0 20px 20px 0;
   position: sticky;
-  top: 120px;
-  left: 0;
+  top: 119px;
+  transform: translateX(-120%);
 }
 
 @media screen and (min-width: 768px) {
@@ -709,6 +708,7 @@ section-header {
     width: 200px;
     position: absolute;
     top: 170px;
+    left: 0;
   }
 }
 
@@ -746,6 +746,18 @@ section-header {
 .right {
   position: absolute;
   right: 100px;
+}
+
+.show-filter {
+  background-color: #cf1313;
+  border: none;
+  border-radius: 0 40% 40% 0;
+  outline: none;
+  padding: 5px;
+  position: sticky;
+  top: 126px;
+  left: 0;
+  transform: translateX(-110%);
 }
 
 .overflow {
