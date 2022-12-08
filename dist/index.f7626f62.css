@@ -979,6 +979,7 @@ body, html {
 
 .footer {
   min-height: 100px;
+  height: 246px;
   background: #cf1313;
   flex-direction: column;
   justify-content: center;
