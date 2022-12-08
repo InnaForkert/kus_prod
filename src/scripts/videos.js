@@ -269,6 +269,7 @@ function videoClose() {
   overflow.classList.add("visually-hidden");
   document.removeEventListener("keydown", videoKeyHandler);
   overflow.removeEventListener("click", videoClose);
+  videoModal.setAttribute("src", "#");
 }
 
 function videoPopup(e) {
