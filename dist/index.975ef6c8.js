@@ -843,6 +843,7 @@ function videoClose() {
     modal.classList.add("hidden-opacity");
     overflow.classList.add("visually-hidden");
     document.removeEventListener("keydown", videoKeyHandler);
+    overflow.removeEventListener("click", videoClose);
 }
 function videoPopup(e) {
     e.preventDefault();
@@ -851,6 +852,7 @@ function videoPopup(e) {
     overflow.classList.remove("visually-hidden");
     currentDiv = e.currentTarget;
     document.addEventListener("keydown", videoKeyHandler);
+    overflow.addEventListener("click", videoClose);
 }
 function videoKeyHandler(e) {
     if (e.key === "Escape") videoClose();
