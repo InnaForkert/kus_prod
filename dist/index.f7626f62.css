@@ -1216,4 +1216,19 @@ body, html {
   left: 0;
 }
 
+#myBtn {
+  z-index: 1003;
+  color: #150d2a;
+  background-color: #cf1313;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: Comfortaa, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
 /*# sourceMappingURL=index.f7626f62.css.map */

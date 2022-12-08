@@ -537,8 +537,9 @@ var _menu = require("./scripts/menu");
 var _mobileMenu = require("./scripts/mobileMenu");
 var _videos = require("./scripts/videos");
 var _showFilter = require("./scripts/showFilter");
+var _topTop = require("./scripts/topTop");
 
-},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG"}],"46TGa":[function(require,module,exports) {
+},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG","./scripts/topTop":"kll1L"}],"46TGa":[function(require,module,exports) {
 const cursor = document.querySelector(".cursor");
 const cursorinner = document.querySelector(".cursor2");
 const a = document.querySelectorAll("a");
@@ -882,6 +883,21 @@ function hideFilter() {
     filterShower.addEventListener("click", showFilter);
     filterShower.removeEventListener("click", hideFilter);
     filter.classList.remove("show-filter-onclick");
+}
+
+},{}],"kll1L":[function(require,module,exports) {
+let mybutton = document.getElementById("myBtn");
+mybutton.addEventListener("click", topFunction);
+window.onscroll = function() {
+    scrollFunction();
+};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) mybutton.style.display = "block";
+    else mybutton.style.display = "none";
+}
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
 },{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")
