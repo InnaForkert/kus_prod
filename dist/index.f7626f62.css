@@ -1112,7 +1112,7 @@ body, html {
 .mobile-menu {
   width: 100vw;
   height: 100vh;
-  z-index: 99;
+  z-index: 1001;
   touch-action: none;
   background-color: bisque;
   padding: 100px 60px;
@@ -1165,7 +1165,7 @@ body, html {
 }
 
 .mobile-menu-btn {
-  z-index: 999;
+  z-index: 1002;
   width: 37px;
   background-color: bisque;
   border: none;
@@ -1206,6 +1206,14 @@ body, html {
 
 .move-left {
   transform: translateX(-300%);
+}
+
+.mobile-menu-list + .footer {
+  width: 100vw;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=index.f7626f62.css.map */
