@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100vw;
 
@@ -18,8 +18,12 @@
 }
 .logo {
   &-link {
-    width: 80px;
+    width: 50px;
     margin-left: 25px;
+    margin-top: 5px;
+    @include tablet {
+      width: 80px;
+    }
   }
 }
 .nav {
