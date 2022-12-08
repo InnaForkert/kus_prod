@@ -743,13 +743,15 @@ body {
 }
 
 .left {
-  position: absolute;
-  left: 330px;
+  position: relative;
+  top: -390px;
+  left: 18%;
 }
 
 .right {
-  position: absolute;
-  right: 100px;
+  position: relative;
+  top: -390px;
+  left: 90%;
 }
 
 .show-filter {
