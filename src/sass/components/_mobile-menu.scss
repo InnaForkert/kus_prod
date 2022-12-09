@@ -5,7 +5,7 @@
   width: 100%;
   height: 105vh;
   padding: 100px 60px;
-  z-index: 1005;
+  z-index: 1024;
   background-color: $main-color;
   touch-action: none;
   transition: transform 500ms;
@@ -54,8 +54,8 @@
 
   &-btn {
     position: fixed;
-    top: 40px;
-    z-index: 1006;
+    top: 26px;
+    z-index: 1025;
     right: 30px;
     display: flex;
     gap: 3px;

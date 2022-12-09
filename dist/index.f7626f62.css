@@ -590,11 +590,16 @@ body {
 }
 
 .videos {
-  height: 1536px;
   overflow-x: clip;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .videos {
+    height: 1536px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .videos {
     height: 974px;
   }
@@ -615,6 +620,12 @@ body {
   .video-gallery {
     flex-flow: wrap;
     top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-gallery {
+    left: 300px;
   }
 }
 
@@ -753,7 +764,8 @@ body {
 @media screen and (min-width: 1200px) {
   .video-filter {
     border-radius: 0 20px 20px 0;
-    left: 0;
+    position: absolute;
+    left: 140px;
   }
 }
 
@@ -807,6 +819,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .right {
+    left: 87%;
+  }
+}
+
 .show-filter {
   z-index: 1004;
   background-color: #cf1313;
@@ -824,6 +842,12 @@ body {
     padding: 10px;
     top: 0;
     right: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .show-filter {
+    display: none;
   }
 }
 
@@ -1200,7 +1224,7 @@ body {
 .mobile-menu {
   width: 100%;
   height: 105vh;
-  z-index: 1005;
+  z-index: 1024;
   touch-action: none;
   background-color: bisque;
   padding: 100px 60px;
@@ -1253,7 +1277,7 @@ body {
 }
 
 .mobile-menu-btn {
-  z-index: 1006;
+  z-index: 1025;
   width: 37px;
   background-color: bisque;
   border: none;
@@ -1264,7 +1288,7 @@ body {
   padding: 8px;
   display: flex;
   position: fixed;
-  top: 40px;
+  top: 26px;
   right: 30px;
   overflow: hidden;
 }
