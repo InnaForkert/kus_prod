@@ -123,7 +123,8 @@ body, html {
   height: 100%;
 }
 
-* {
+*, a {
+  cursor: none;
   margin: 0;
   padding: 0;
 }
@@ -143,7 +144,7 @@ ul {
 }
 
 a {
-  cursor: pointer;
+  color: #150d2a;
   text-decoration: none;
 }
 
@@ -256,6 +257,7 @@ body {
 
 .nav-item:hover, .nav-item:focus {
   color: #cf1313;
+  cursor: none;
   box-shadow: inset 0 0 0 2px #cf1313, 10px -10px 0 -3px #fffffa, 10px -10px tomato, 20px -20px 0 -3px #fffffa, 20px -20px #cf1313;
 }
 
@@ -975,48 +977,32 @@ body {
   }
 }
 
-* {
-  cursor: none;
-}
-
 .cursor {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .cursor {
-    width: 30px;
-    height: 30px;
-    pointer-events: none;
-    z-index: 9999;
-    border: 1px solid #150d2a;
-    border-radius: 100%;
-    transition: all .2s ease-out;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(calc(15px - 50%), -50%);
-  }
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  border: 1px solid #150d2a;
+  border-radius: 100%;
+  transition: all .2s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(calc(15px - 50%), -50%);
 }
 
 .cursor2 {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .cursor2 {
-    z-index: 9999;
-    width: 10px;
-    height: 10px;
-    opacity: .3;
-    pointer-events: none;
-    background-color: #000;
-    border-radius: 100%;
-    transition: width .3s, height .3s, background-color .3s;
-    position: fixed;
-    transform: translate(-50%, -50%);
-  }
+  z-index: 9999;
+  width: 10px;
+  height: 10px;
+  opacity: .3;
+  pointer-events: none;
+  background-color: #000;
+  border-radius: 100%;
+  transition: width .3s, height .3s, background-color .3s;
+  display: block;
+  position: fixed;
+  transform: translate(-50%, -50%);
 }
 
 .hover {

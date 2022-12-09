@@ -31,7 +31,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.13",
-    "cloudinary": "^1.32.0"
+    "cloudinary": "^1.32.0",
+    "device-detector-js": "^3.0.3"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
