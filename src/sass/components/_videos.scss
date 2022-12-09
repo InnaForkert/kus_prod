@@ -129,7 +129,7 @@
 
 .video-filter {
   position: sticky;
-  transform: translateX(-120%);
+  transform: translateX(-140px);
   top: 120px;
   width: 150px;
   background-color: $accent-color;
@@ -182,11 +182,10 @@
 }
 
 .show-filter {
-  position: sticky;
-  top: 92px;
-  left: 0;
+  position: absolute;
+  top: 0px;
+  right: -10px;
   z-index: 1004;
-  transform: translate(-110%, 100%);
 
   padding: 5px;
 
@@ -194,8 +193,6 @@
   border-radius: 0 40% 40% 0;
   border: none;
   outline: none;
-
-  transition: transform 400ms;
 }
 
 .show {
