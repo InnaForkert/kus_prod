@@ -1118,8 +1118,8 @@ body, html {
 
 .mobile-menu {
   width: 100vw;
-  height: 100vh;
-  z-index: 1001;
+  height: 105vh;
+  z-index: 1005;
   touch-action: none;
   background-color: bisque;
   padding: 100px 60px;
@@ -1172,7 +1172,7 @@ body, html {
 }
 
 .mobile-menu-btn {
-  z-index: 1002;
+  z-index: 1006;
   width: 37px;
   background-color: bisque;
   border: none;
