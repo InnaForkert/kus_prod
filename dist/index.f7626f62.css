@@ -612,6 +612,7 @@ body {
   margin: 10px 1%;
   position: relative;
   overflow: hidden;
+  transform: translateX(-10%);
 }
 
 @media screen and (min-width: 768px) {
