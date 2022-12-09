@@ -590,6 +590,7 @@ body {
 
 .videos {
   height: 1536px;
+  overflow-x: clip;
 }
 
 .video-gallery {
