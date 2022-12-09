@@ -1,24 +1,8 @@
-import { device } from "./device";
-
 const cursor = document.querySelector(".cursor");
 const cursorinner = document.querySelector(".cursor2");
 const a = document.querySelectorAll("a");
-const all = document.querySelector("*");
-
-// all.style.cursor = "auto";
 
 (function createCursor() {
-  alert(device.device.type);
-  if (device.device.type !== "desktop") {
-    all.style.cursor = "auto";
-    cursor.style.display = "none";
-    cursorinner.style.display = "none";
-    return;
-  }
-  all.style.cursor = "none";
-  cursor.style.display = "block";
-  cursorinner.style.display = "block";
-
   document.addEventListener("mousemove", function (e) {
     const x = e.clientX;
     const y = e.clientY;
