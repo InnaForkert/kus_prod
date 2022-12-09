@@ -889,30 +889,43 @@ body, html {
 }
 
 .cursor {
-  width: 30px;
-  height: 30px;
-  pointer-events: none;
-  z-index: 9999;
-  border: 1px solid #150d2a;
-  border-radius: 100%;
-  transition: all .2s ease-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(calc(15px - 50%), -50%);
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .cursor {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    z-index: 9999;
+    border: 1px solid #150d2a;
+    border-radius: 100%;
+    transition: all .2s ease-out;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(calc(15px - 50%), -50%);
+  }
 }
 
 .cursor2 {
-  z-index: 9999;
-  width: 10px;
-  height: 10px;
-  opacity: .3;
-  pointer-events: none;
-  background-color: #000;
-  border-radius: 100%;
-  transition: width .3s, height .3s, background-color .3s;
-  position: fixed;
-  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .cursor2 {
+    z-index: 9999;
+    width: 10px;
+    height: 10px;
+    opacity: .3;
+    pointer-events: none;
+    background-color: #000;
+    border-radius: 100%;
+    transition: width .3s, height .3s, background-color .3s;
+    position: fixed;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .hover {
