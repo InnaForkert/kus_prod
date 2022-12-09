@@ -8,6 +8,7 @@ const all = document.querySelector("*");
 // all.style.cursor = "auto";
 
 (function createCursor() {
+  alert(device.device.type);
   if (device.device.type !== "desktop") {
     all.style.cursor = "auto";
     cursor.style.display = "none";

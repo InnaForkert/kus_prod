@@ -548,6 +548,7 @@ const a = document.querySelectorAll("a");
 const all = document.querySelector("*");
 // all.style.cursor = "auto";
 (function createCursor() {
+    alert((0, _device.device).device.type);
     if ((0, _device.device).device.type !== "desktop") {
         all.style.cursor = "auto";
         cursor.style.display = "none";
