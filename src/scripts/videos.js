@@ -197,7 +197,6 @@ function nextPage() {
   currentPageEnd += 6;
   if (filteredArray.length > 0) createVideos(filteredArray);
   else createVideos(videoArray);
-  console.log();
 }
 
 function previousPage() {
@@ -218,25 +217,28 @@ function createVideos(arr) {
   const marcup = arr.map((video, idx) => {
     if (idx >= currentPageStart && idx < currentPageEnd) {
       return `<div class="gallery-item">
-                  <img
-                    src="${video.img}"
-                    alt="${video.subheading}"
-                    data-link="${video.link}"
-                  />
-                  <div class="gallery-item-caption">
-                    <div>
-                      <h2>${video.heading}</h2>
-                      <p>${video.subheading}</p>
-                    </div>
-                  </div>
-                </div>`;
+      <img
+      src="${video.img}"
+      alt="${video.subheading}"
+      data-link="${video.link}"
+      />
+      <div class="gallery-item-caption">
+      <div>
+      <h2>${video.heading}</h2>
+      <p>${video.subheading}</p>
+      </div>
+      </div>
+      </div>`;
     }
   });
   videoGallery.innerHTML = marcup.join("");
   const videos = document.querySelectorAll(".gallery-item");
   videos.forEach((video) => video.addEventListener("click", videoPopup));
-  if (currentPageStart > 0) left.classList.remove("visually-hidden");
-  else left.classList.add("visually-hidden");
+  if (currentPageStart > 0 && left.classList) {
+    left.classList.remove("visually-hidden");
+  } else {
+    left.classList.add("visually-hidden");
+  }
   if (filteredArray.length > 0) {
     if (currentPageEnd >= filteredArray.length)
       right.classList.add("visually-hidden");
