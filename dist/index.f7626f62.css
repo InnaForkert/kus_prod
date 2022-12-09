@@ -877,6 +877,13 @@ body {
   .modal {
     height: 70vh;
     width: 60%;
+    padding-block: 40px;
+    padding-inline: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
     padding: 40px;
     top: 55%;
   }
@@ -886,7 +893,7 @@ body {
   width: 20px;
   height: 20px;
   cursor: none;
-  color: #fffffa;
+  color: #150d2a;
   z-index: 9999;
   background: none;
   border: none;
@@ -900,7 +907,6 @@ body {
 }
 
 .close-btn:hover, .close-btn:focus {
-  color: #150d2a;
   color: #cf1313;
 }
 
@@ -934,6 +940,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  #next {
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #next {
     right: 40px;
   }

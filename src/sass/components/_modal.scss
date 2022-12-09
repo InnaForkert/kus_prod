@@ -25,10 +25,14 @@
 
   transition: opacity 400ms;
   @include tablet {
-    padding: 40px;
-    top: 55%;
+    padding-block: 40px;
+    padding-inline: 10px;
     height: 70vh;
     width: 60%;
+  }
+  @include desktop {
+    top: 55%;
+    padding: 40px;
   }
 }
 
@@ -45,11 +49,10 @@
   cursor: none;
   font-size: 20px;
   transition: color 300ms;
-  color: $white;
+  color: $black;
   z-index: 9999;
   &:hover,
   &:focus {
-    color: $black;
     color: $accent-color;
   }
 }
@@ -83,6 +86,9 @@
   position: absolute;
   right: 5px;
   @include tablet {
+    right: 10px;
+  }
+  @include desktop {
     right: 40px;
   }
 }
