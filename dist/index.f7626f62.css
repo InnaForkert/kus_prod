@@ -115,7 +115,12 @@ summary {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
+  overflow-x: hidden;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -229,14 +234,17 @@ body {
   width: 100vw;
   z-index: 99;
   background-color: #fffffa;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px;
-  display: flex;
   position: sticky;
   top: 10px;
   left: 0;
   box-shadow: 0 0 5px #150d2a;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 .logo-link {
@@ -883,11 +891,6 @@ body {
   cursor: none;
 }
 
-body, html {
-  width: 100%;
-  height: 100%;
-}
-
 .cursor {
   display: none;
 }
@@ -1130,7 +1133,7 @@ body, html {
 }
 
 .mobile-menu {
-  width: 100vw;
+  width: 100%;
   height: 105vh;
   z-index: 1005;
   touch-action: none;

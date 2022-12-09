@@ -19,14 +19,18 @@
   <body>
     <main>
       <header class="header">
-  <a href="/index.html" class="logo-link"><img class="logo-img" src="/logo.726d37a8.png" alt="Лого майстерні напівфабрикатів Ласий кусь, зображує ситого та задоволеного кота"></a>
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#aboutus" class="nav-link">Про нас</a></li>
-      <li class="nav-item"><a href="#products" class="nav-link">Меню</a></li>
-      <li class="nav-item"><a href="#videos" class="nav-link">Рецепти</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <a href="/index.html" class="logo-link"><img class="logo-img" src="/logo.726d37a8.png" alt="Лого майстерні напівфабрикатів Ласий кусь, зображує ситого та задоволеного кота"></a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#aboutus" class="nav-link">Про нас</a>
+        </li>
+        <li class="nav-item"><a href="#products" class="nav-link">Меню</a></li>
+        <li class="nav-item"><a href="#videos" class="nav-link">Рецепти</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <button type="button" class="mobile-menu-btn">
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 32 32">
@@ -303,28 +307,7 @@
   </div>
 </section>
 
-      <section class="videos" id="videos">
-  <div class="container">
-    <h1 class="section-heading">Рецепти</h1>
-    <button type="button" class="show-filter">></button>
-    <ul class="video-filter">
-      <li class="filter-item" id="allVideos">Всі</li>
-      <li class="filter-item" data-category="1">Напівфабрикати</li>
-      <li class="filter-item" data-category="2">М'ясні блюда</li>
-      <li class="filter-item" data-category="3">Супи</li>
-      <li class="filter-item" data-category="4">Випічка</li>
-      <li class="filter-item" data-category="5">Солодощі</li>
-      <li class="filter-item" data-category="6">Салати</li>
-      <li class="filter-item" data-category="7">Інше</li>
-    </ul>
-    <div class="video-gallery" id="videoGallery"></div>
-    <button type="button" class="video-controller left visually-hidden">
-      <
-    </button>
-    <button type="button" class="video-controller right">></button>
-  </div>
-</section>
-
+      <!-- <include src="./partials/videos.html"></include> -->
     </main>
     <footer class="footer">
   <div class="waves">

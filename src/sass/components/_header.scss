@@ -4,10 +4,6 @@
   left: 0;
   width: 100vw;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   z-index: 99;
 
   padding: 15px;
@@ -15,6 +11,12 @@
   background-color: $white;
 
   box-shadow: 0 0 5px $black;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   &-link {
