@@ -371,6 +371,12 @@ body {
   box-shadow: 0 0 5rem 1rem #000000b3;
 }
 
+@media screen and (min-width: 370px) {
+  .card {
+    height: 70vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card {
     height: 21rem;

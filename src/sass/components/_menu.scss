@@ -23,6 +23,12 @@
   transform-style: preserve-3d;
   box-shadow: 0 0 5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: 3rem;
+  @media screen and (min-width: 370px) {
+    height: 70vw;
+  }
+  // @media screen and (min-width: 470px) {
+  //   height: 300px;
+  // }
   @include tablet {
     height: 21rem;
     width: 30vw;
