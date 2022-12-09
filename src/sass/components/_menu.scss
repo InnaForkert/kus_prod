@@ -26,10 +26,11 @@
   @media screen and (min-width: 370px) {
     height: 70vw;
   }
-  // @media screen and (min-width: 470px) {
-  //   height: 300px;
-  // }
   @include tablet {
+    width: 43vw;
+    height: 35vw;
+  }
+  @include desktop {
     height: 21rem;
     width: 30vw;
   }
@@ -93,6 +94,9 @@
     font-size: 10px;
     @include tablet {
       padding: 15px 20px;
+      font-size: 14px;
+    }
+    @include desktop {
       font-size: 16px;
     }
   }

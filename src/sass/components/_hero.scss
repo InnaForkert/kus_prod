@@ -17,6 +17,8 @@
 
   @include tablet {
     padding-block: 60px;
+  }
+  @include desktop {
     padding-inline: 100px;
   }
 
@@ -28,7 +30,10 @@
     font-weight: 500;
     letter-spacing: normal;
     @include tablet {
-      font-size: 40px;
+      font-size: 34px;
+    }
+    @include desktop {
+      font-style: 40px;
     }
   }
 

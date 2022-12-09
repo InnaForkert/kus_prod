@@ -277,6 +277,11 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     padding-block: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
     padding-inline: 100px;
   }
 }
@@ -292,7 +297,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-span {
-    font-size: 40px;
+    font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-span {
+    font-style: 40px;
   }
 }
 
@@ -349,6 +360,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .card {
+    width: 43vw;
+    height: 35vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .card {
     height: 21rem;
     width: 30vw;
@@ -418,6 +436,12 @@ body {
 @media screen and (min-width: 768px) {
   .card--back .retro {
     padding: 15px 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card--back .retro {
     font-size: 16px;
   }
 }

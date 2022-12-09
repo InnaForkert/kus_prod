@@ -10,7 +10,7 @@
   touch-action: none;
   transition: transform 500ms;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 
