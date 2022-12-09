@@ -1,6 +1,10 @@
 .videos {
   height: 1536px;
   overflow-x: clip;
+
+  @include tablet {
+    height: 974px;
+  }
 }
 .video-gallery {
   position: relative;
@@ -14,6 +18,7 @@
   @include tablet {
     flex-wrap: wrap;
     flex-direction: row;
+    top: 0;
   }
 }
 
@@ -142,11 +147,14 @@
   border-radius: 0 0 20px 0;
 
   @include tablet {
-    border-radius: 0 20px 20px 0;
-    left: 0;
+    left: -50px;
     position: absolute;
     width: 200px;
     top: 170px;
+  }
+  @include desktop {
+    border-radius: 0 20px 20px 0;
+    left: 0;
   }
 }
 .filter-item {
@@ -177,17 +185,23 @@
   position: relative;
   top: -390px;
   left: 18%;
+  @include tablet {
+    top: 0;
+  }
 }
 
 .right {
   position: relative;
   top: -390px;
   left: 90%;
+  @include tablet {
+    top: 0;
+  }
 }
 
 .show-filter {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -10px;
   z-index: 1004;
 
@@ -197,12 +211,23 @@
   border-radius: 0 40% 40% 0;
   border: none;
   outline: none;
+  @include tablet {
+    padding: 10px;
+    right: -15px;
+    top: 0;
+  }
 }
 
 .show {
-  transform: translate(calc(-110% + 130px), 100%);
+  transform: translateX(0);
+  @include tablet {
+    transform: translateX(-4px);
+  }
 }
 
 .show-filter-onclick {
-  transform: translateX(-20%);
+  transform: translateX(-8%);
+  @include tablet {
+    transform: translateX(45px);
+  }
 }

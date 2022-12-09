@@ -206,14 +206,14 @@ body {
 
 .header {
   width: 100vw;
-  z-index: 99;
+  z-index: 1014;
   background-color: #fffffa;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   display: flex;
   position: sticky;
-  top: 10px;
+  top: 0;
   left: 0;
   box-shadow: 0 0 5px #150d2a;
 }
@@ -594,6 +594,12 @@ body {
   overflow-x: clip;
 }
 
+@media screen and (min-width: 768px) {
+  .videos {
+    height: 974px;
+  }
+}
+
 .video-gallery {
   max-width: 1200px;
   text-align: center;
@@ -608,6 +614,7 @@ body {
 @media screen and (min-width: 768px) {
   .video-gallery {
     flex-flow: wrap;
+    top: 0;
   }
 }
 
@@ -737,9 +744,15 @@ body {
 @media screen and (min-width: 768px) {
   .video-filter {
     width: 200px;
-    border-radius: 0 20px 20px 0;
     position: absolute;
     top: 170px;
+    left: -50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-filter {
+    border-radius: 0 20px 20px 0;
     left: 0;
   }
 }
@@ -776,10 +789,22 @@ body {
   left: 18%;
 }
 
+@media screen and (min-width: 768px) {
+  .left {
+    top: 0;
+  }
+}
+
 .right {
   position: relative;
   top: -390px;
   left: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .right {
+    top: 0;
+  }
 }
 
 .show-filter {
@@ -794,12 +819,32 @@ body {
   right: -10px;
 }
 
+@media screen and (min-width: 768px) {
+  .show-filter {
+    padding: 10px;
+    top: 0;
+    right: -15px;
+  }
+}
+
 .show {
-  transform: translate(calc(130px - 110%), 100%);
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .show {
+    transform: translateX(-4px);
+  }
 }
 
 .show-filter-onclick {
-  transform: translateX(-20%);
+  transform: translateX(-8%);
+}
+
+@media screen and (min-width: 768px) {
+  .show-filter-onclick {
+    transform: translateX(45px);
+  }
 }
 
 .overflow {
