@@ -6,11 +6,15 @@
   position: relative;
   left: 12%;
   top: -390px;
-  display: flex;
-  flex-wrap: wrap;
   max-width: 1200px;
   text-align: center;
+  display: flex;
   min-height: 400px;
+  flex-direction: column;
+  @include tablet {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .video-gallery .gallery-item {

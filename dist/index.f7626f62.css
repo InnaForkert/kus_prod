@@ -208,17 +208,14 @@ body {
   width: 100vw;
   z-index: 99;
   background-color: #fffffa;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px;
+  display: flex;
   position: sticky;
   top: 10px;
   left: 0;
   box-shadow: 0 0 5px #150d2a;
-}
-
-.header .container {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
 }
 
 .logo-link {
@@ -577,11 +574,17 @@ body {
   max-width: 1200px;
   text-align: center;
   min-height: 400px;
-  flex-wrap: wrap;
+  flex-direction: column;
   display: flex;
   position: relative;
   top: -390px;
   left: 12%;
+}
+
+@media screen and (min-width: 768px) {
+  .video-gallery {
+    flex-flow: wrap;
+  }
 }
 
 .video-gallery .gallery-item {
