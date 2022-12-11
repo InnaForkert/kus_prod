@@ -577,7 +577,9 @@ const a = document.querySelectorAll("a");
 },{}],"iDcOQ":[function(require,module,exports) {
 const cards = document.querySelectorAll(".card");
 cards.forEach((card)=>card.addEventListener("click", handleCardClick));
-function handleCardClick() {
+cards.forEach((card)=>card.addEventListener("touchend", handleCardClick));
+function handleCardClick(e) {
+    console.log(e);
     this.classList.toggle("rotated");
 }
 
