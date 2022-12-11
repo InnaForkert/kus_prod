@@ -610,152 +610,7 @@ function closeMobileMenu() {
 }
 
 },{}],"7n5Iu":[function(require,module,exports) {
-const videoArray = [
-    {
-        id: 1,
-        img: "https://i9.ytimg.com/vi/sleryK4X4S8/maxresdefault.jpg?v=63617803&sqp=CNT39JsG&rs=AOn4CLAA93NPRCYs6D3yAPI2aoInKXzy-w",
-        link: "https://www.youtube.com/embed/sleryK4X4S8",
-        heading: "Пельмені",
-        subheading: "ІДЕАЛЬНЕ тісто + соковита начинка❗Домашні пельмені ❗",
-        category: "1, 2"
-    },
-    {
-        id: 2,
-        img: "https://i9.ytimg.com/vi_webp/mB0RmAnJuXU/maxresdefault.webp?v=637a05af&sqp=CID69JsG&rs=AOn4CLBWZax5FOVo1jjwcEzZNpswQHyPog",
-        link: "https://www.youtube.com/embed/mB0RmAnJuXU",
-        heading: "Фаршировані Стегенця",
-        subheading: "\uD83C\uDF57Бюджетно та по-Святковому \uD83C\uDF84",
-        category: "2"
-    },
-    {
-        id: 3,
-        img: "https://i9.ytimg.com/vi_webp/cxQhBzr7Cvk/maxresdefault.webp?v=63487248&sqp=CID69JsG&rs=AOn4CLBsUiS_se0Qcie05RiYzz91837zAw",
-        link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
-        heading: "\uD83D\uDD34ХІНКАЛІ на вашій кухні",
-        subheading: "Грузинська смакота з Українським акцентом\uD83D\uDC9B\uD83D\uDC99",
-        category: "1, 2"
-    },
-    {
-        id: 4,
-        img: "https://i9.ytimg.com/vi/f00Nm0q9Q5w/maxresdefault.jpg?v=6335f00e&sqp=CISB9ZsG&rs=AOn4CLAlF2LyzyiochDoA8xPlX1jccI3VA",
-        link: "https://www.youtube.com/embed/f00Nm0q9Q5w",
-        heading: "\uD83E\uDDE1Найяскравіший СУП цієї ОСЕНІ",
-        subheading: "\uD83C\uDF42/ pumpkin soup\uD83E\uDD58",
-        category: "3"
-    },
-    {
-        id: 5,
-        img: "https://i9.ytimg.com/vi/VwI54d-rThQ/maxresdefault.jpg?v=63117f8b&sqp=CLCD9ZsG&rs=AOn4CLAnVVD4sTNNX1Ng9ByR7hn2-rBlSA",
-        link: "https://www.youtube.com/embed/VwI54d-rThQ",
-        heading: "Штрулі",
-        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
-        category: "1, 2"
-    },
-    {
-        id: 6,
-        img: "https://i9.ytimg.com/vi/Bz5lxckxeoo/maxresdefault.jpg?v=62f6b211&sqp=CNyF9ZsG&rs=AOn4CLC7g12-gdxuGuQiQNHbzzzLWQNGFg",
-        link: "https://www.youtube.com/embed/Bz5lxckxeoo",
-        heading: "ТОП 5 Найкрасивіших булочок",
-        subheading: "\uD83E\uDD68Проста та зручна формовка",
-        category: "4, 5"
-    },
-    {
-        id: 7,
-        img: "https://i9.ytimg.com/vi_webp/VVMcesPAWiM/maxresdefault.webp?v=62e20f72&sqp=COia9ZsG&rs=AOn4CLDGO5HK5vt0JKdjGV01WM9p99oWow",
-        link: "https://www.youtube.com/embed/VVMcesPAWiM",
-        heading: "\uD83D\uDD34ГОЛУБЦІ",
-        subheading: "Всі тонкощі приготування та ТОП 3 способи закрутки (швидко і просто)❗",
-        category: "1, 2"
-    },
-    {
-        id: 8,
-        img: "https://i9.ytimg.com/vi_webp/k412HWe9vFQ/maxresdefault.webp?v=62cb28c2&sqp=COia9ZsG&rs=AOn4CLDWeaakS6ojCqfHzip4r1Z-Gc2_Kg",
-        link: "https://www.youtube.com/embed/k412HWe9vFQ",
-        heading: "Ласуй, та Не Думай про Калорії ❗",
-        subheading: "Корисний Перекус, що можна взяти з собою в дорогу",
-        category: "5"
-    },
-    {
-        id: 9,
-        img: "https://i9.ytimg.com/vi_webp/WtE1Et_gM8Y/maxresdefault.webp?v=629265c2&sqp=CJSd9ZsG&rs=AOn4CLDoJSYkydRtFdN5g9U7GtjHCwiGbA",
-        link: "https://www.youtube.com/embed/WtE1Et_gM8Y",
-        heading: "ХАЧАПУРІ",
-        subheading: "Експрес ХАЧАПУРІ за 10 хвилин\uD83C\uDF55\uD83E\uDD6E",
-        category: "2, 4"
-    },
-    {
-        id: 10,
-        img: "https://i9.ytimg.com/vi_webp/TZiPAKqxioY/maxresdefault.webp?v=627c2650&sqp=CMCf9ZsG&rs=AOn4CLCja8CddqHkJeE4wUH86QDtyC7YKQ",
-        link: "https://www.youtube.com/embed/TZiPAKqxioY",
-        heading: "\uD83D\uDD34ТОП 3 рецепти як смачно приготувати курячі сердечка",
-        subheading: "НИЗЬКОКАЛОРІЙНІША частина курки.\uD83C\uDF57",
-        category: "2"
-    },
-    {
-        id: 11,
-        img: "https://i9.ytimg.com/vi/0mqnbl613uM/maxresdefault.jpg?v=626ed71e&sqp=CMCf9ZsG&rs=AOn4CLCrBrCRlHEPGjVYBshqFp3M76gBeg",
-        link: "https://www.youtube.com/embed/0mqnbl613uM",
-        heading: "Курячий рулет з Клюквою\uD83C\uDF52",
-        subheading: "Неймовірна СМАКОТА!",
-        category: "2"
-    },
-    {
-        id: 12,
-        img: "https://i9.ytimg.com/vi_webp/dGJ51V5OPy0/maxresdefault.webp?v=6262ba38&sqp=CMCf9ZsG&rs=AOn4CLBwfRUL7PH3dOys3D807aV6Wp2ldA",
-        link: "https://www.youtube.com/embed/dGJ51V5OPy0",
-        heading: "Привітання з ВЕЛИКОДНЕМ!",
-        subheading: "ХРИСТОС Воскрес!",
-        category: "7"
-    },
-    {
-        id: 13,
-        img: "https://i9.ytimg.com/vi_webp/XrwUxcr-RNI/maxresdefault.webp?v=625e847a&sqp=CMCf9ZsG&rs=AOn4CLBS-GTkSVQje7aFfzwzGFzeCVKHAA",
-        link: "https://www.youtube.com/embed/XrwUxcr-RNI",
-        heading: "Два СУПЕР-САЛАТИ за 5 хвилин \uD83E\uDD57",
-        subheading: "для жіночої КРАСИ та ЗДОРОВ'Я. \uD83E\uDD55\uD83C\uDF4F\uD83E\uDD6C",
-        category: "6"
-    },
-    {
-        id: 14,
-        img: "https://i9.ytimg.com/vi_webp/HF2dXaUxVnw/sddefault.webp?v=625334da&sqp=COyh9ZsG&rs=AOn4CLBd1qQXITFKfKZI-wB79cth0rEfQg",
-        link: "https://www.youtube.com/embed/HF2dXaUxVnw",
-        heading: "ТОП 3 начинки для ВАРЕНИКІВ",
-        subheading: "ТІСТО, що не розварюється\uD83E\uDD5F\uD83E\uDD5F\uD83E\uDD5F",
-        category: "1, 2"
-    },
-    {
-        id: 15,
-        img: "https://i9.ytimg.com/vi_webp/IHL9qLNiceA/maxresdefault.webp?v=624acd51&sqp=COyh9ZsG&rs=AOn4CLD9EFvmF_3T4uJ3nDyDC24xiNCrJA",
-        link: "https://www.youtube.com/embed/IHL9qLNiceA",
-        heading: "Експрес - ВІДБИВНІ без Смаження на сковороді",
-        subheading: "ШВИДКО та ЕКОНОМНО\uD83E\uDD69",
-        category: "2"
-    },
-    {
-        id: 16,
-        img: "https://i9.ytimg.com/vi_webp/6E04A_tvnEw/maxresdefault.webp?v=62430ed6&sqp=COyh9ZsG&rs=AOn4CLABqJyEEKS-xbKQtVfU3asIqp-kug",
-        link: "https://www.youtube.com/embed/6E04A_tvnEw",
-        heading: "Гречана СМАКОТА з картопляними Кльоцками\uD83E\uDD63\uD83E\uDD54",
-        subheading: "Гречаний суп із кльоцками",
-        category: "3"
-    },
-    {
-        id: 17,
-        img: "https://i9.ytimg.com/vi/P0_DtB_GXuQ/maxresdefault.jpg?v=620e5bf9&sqp=COyh9ZsG&rs=AOn4CLAy4xEF42gK4TelXvV1S7DLc4twfw",
-        link: "https://www.youtube.com/embed/P0_DtB_GXuQ",
-        heading: "\uD83C\uDF4A\uD83C\uDF4BЦитрусові цукати",
-        subheading: "випічка на ВЕЛИКДЕНЬ \uD83C\uDF4A\uD83C\uDF4B",
-        category: "5"
-    },
-    {
-        id: 18,
-        img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
-        link: "https://www.youtube.com/embed/ZWA_FzCjnI0",
-        heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
-        subheading: "Чесний відгук",
-        category: "7"
-    }
-];
+var _videoArray = require("./videoArray");
 const videoGallery = document.querySelector("#videoGallery");
 const videoModal = document.querySelector("#videoModal");
 const overflow = document.querySelector(".video-modal");
@@ -772,7 +627,8 @@ let currentDiv;
 let currentPageStart = 0;
 let currentPageEnd = 6;
 let filteredArray = [];
-createVideos(videoArray);
+const sortedArray = (0, _videoArray.videoArray).sort((a, b)=>b.id - a.id);
+createVideos(sortedArray);
 filters.forEach((filter)=>{
     filter.addEventListener("click", handleFilter);
 });
@@ -787,23 +643,24 @@ function showAllVideos() {
     filteredArray = [];
     currentPageEnd = 6;
     currentPageStart = 0;
-    createVideos(videoArray);
+    console.log(sortedArray);
+    createVideos(sortedArray);
 }
 function nextPage() {
     currentPageStart += 6;
     currentPageEnd += 6;
     if (filteredArray.length > 0) createVideos(filteredArray);
-    else createVideos(videoArray);
+    else createVideos(sortedArray);
 }
 function previousPage() {
     currentPageStart -= 6;
     currentPageEnd -= 6;
-    createVideos(videoArray);
+    createVideos(sortedArray);
 }
 function filterVideos(e) {
     currentFilter = e.target;
     filteredArray = [
-        ...videoArray
+        ...sortedArray
     ].filter((video)=>video.category.includes(currentFilter.dataset.category));
     createVideos(filteredArray);
 }
@@ -831,7 +688,7 @@ function createVideos(arr) {
     if (filteredArray.length > 0) {
         if (currentPageEnd >= filteredArray.length) right.classList.add("visually-hidden");
         else right.classList.remove("visually-hidden");
-    } else if (currentPageEnd >= videoArray.length) right.classList.add("visually-hidden");
+    } else if (currentPageEnd >= sortedArray.length) right.classList.add("visually-hidden");
     else right.classList.remove("visually-hidden");
 }
 function nextVideo(e) {
@@ -871,6 +728,253 @@ function handleFilter(e) {
     currentFilter = e.target;
     currentFilter.classList.add("active-filter");
 }
+
+},{"./videoArray":"faMc4"}],"faMc4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "videoArray", ()=>videoArray);
+const videoArray = [
+    {
+        id: 18,
+        img: new URL(require("75737fcdb6bf2459")),
+        link: "https://www.youtube.com/embed/sleryK4X4S8",
+        heading: "Пельмені",
+        subheading: "ІДЕАЛЬНЕ тісто + соковита начинка❗Домашні пельмені ❗",
+        category: "1, 2"
+    },
+    {
+        id: 17,
+        img: new URL(require("4576fc15b2366e8c")),
+        link: "https://www.youtube.com/embed/mB0RmAnJuXU",
+        heading: "Фаршировані Стегенця",
+        subheading: "\uD83C\uDF57Бюджетно та по-Святковому \uD83C\uDF84",
+        category: "2"
+    },
+    {
+        id: 16,
+        img: new URL(require("75c79cebcd1fae5b")),
+        link: "https://www.youtube.com/embed/cxQhBzr7Cvk",
+        heading: "\uD83D\uDD34ХІНКАЛІ на вашій кухні",
+        subheading: "Грузинська смакота з Українським акцентом\uD83D\uDC9B\uD83D\uDC99",
+        category: "1, 2"
+    },
+    {
+        id: 15,
+        img: new URL(require("53bbfd72a04c1a28")),
+        link: "https://www.youtube.com/embed/f00Nm0q9Q5w",
+        heading: "\uD83E\uDDE1Найяскравіший СУП цієї ОСЕНІ",
+        subheading: "\uD83C\uDF42/ pumpkin soup\uD83E\uDD58",
+        category: "3"
+    },
+    {
+        id: 14,
+        img: new URL(require("e779213691e38212")),
+        link: "https://www.youtube.com/embed/VwI54d-rThQ",
+        heading: "Штрулі",
+        subheading: "НАПІВФАБРИКАТИ для особливого випадку \uD83E\uDD5FЯк усе встигнути \uD83D\uDC68‍\uD83C\uDF73",
+        category: "1, 2"
+    },
+    {
+        id: 13,
+        img: new URL(require("b759997499ad4121")),
+        link: "https://www.youtube.com/embed/Bz5lxckxeoo",
+        heading: "ТОП 5 Найкрасивіших булочок",
+        subheading: "\uD83E\uDD68Проста та зручна формовка",
+        category: "4, 5"
+    },
+    {
+        id: 12,
+        img: new URL(require("9fcf07e86ee004c9")),
+        link: "https://www.youtube.com/embed/VVMcesPAWiM",
+        heading: "\uD83D\uDD34ГОЛУБЦІ",
+        subheading: "Всі тонкощі приготування та ТОП 3 способи закрутки (швидко і просто)❗",
+        category: "1, 2"
+    },
+    {
+        id: 11,
+        img: "https://i9.ytimg.com/vi_webp/k412HWe9vFQ/maxresdefault.webp?v=62cb28c2&sqp=COia9ZsG&rs=AOn4CLDWeaakS6ojCqfHzip4r1Z-Gc2_Kg",
+        link: "https://www.youtube.com/embed/k412HWe9vFQ",
+        heading: "Ласуй, та Не Думай про Калорії ❗",
+        subheading: "Корисний Перекус, що можна взяти з собою в дорогу",
+        category: "5"
+    },
+    {
+        id: 10,
+        img: "https://i9.ytimg.com/vi_webp/WtE1Et_gM8Y/maxresdefault.webp?v=629265c2&sqp=CJSd9ZsG&rs=AOn4CLDoJSYkydRtFdN5g9U7GtjHCwiGbA",
+        link: "https://www.youtube.com/embed/WtE1Et_gM8Y",
+        heading: "ХАЧАПУРІ",
+        subheading: "Експрес ХАЧАПУРІ за 10 хвилин\uD83C\uDF55\uD83E\uDD6E",
+        category: "2, 4"
+    },
+    {
+        id: 9,
+        img: "https://i9.ytimg.com/vi_webp/TZiPAKqxioY/maxresdefault.webp?v=627c2650&sqp=CMCf9ZsG&rs=AOn4CLCja8CddqHkJeE4wUH86QDtyC7YKQ",
+        link: "https://www.youtube.com/embed/TZiPAKqxioY",
+        heading: "\uD83D\uDD34ТОП 3 рецепти як смачно приготувати курячі сердечка",
+        subheading: "НИЗЬКОКАЛОРІЙНІША частина курки.\uD83C\uDF57",
+        category: "2"
+    },
+    {
+        id: 8,
+        img: "https://i9.ytimg.com/vi/0mqnbl613uM/maxresdefault.jpg?v=626ed71e&sqp=CMCf9ZsG&rs=AOn4CLCrBrCRlHEPGjVYBshqFp3M76gBeg",
+        link: "https://www.youtube.com/embed/0mqnbl613uM",
+        heading: "Курячий рулет з Клюквою\uD83C\uDF52",
+        subheading: "Неймовірна СМАКОТА!",
+        category: "2"
+    },
+    {
+        id: 7,
+        img: "https://i9.ytimg.com/vi_webp/dGJ51V5OPy0/maxresdefault.webp?v=6262ba38&sqp=CMCf9ZsG&rs=AOn4CLBwfRUL7PH3dOys3D807aV6Wp2ldA",
+        link: "https://www.youtube.com/embed/dGJ51V5OPy0",
+        heading: "Привітання з ВЕЛИКОДНЕМ!",
+        subheading: "ХРИСТОС Воскрес!",
+        category: "7"
+    },
+    {
+        id: 6,
+        img: "https://i9.ytimg.com/vi_webp/XrwUxcr-RNI/maxresdefault.webp?v=625e847a&sqp=CMCf9ZsG&rs=AOn4CLBS-GTkSVQje7aFfzwzGFzeCVKHAA",
+        link: "https://www.youtube.com/embed/XrwUxcr-RNI",
+        heading: "Два СУПЕР-САЛАТИ за 5 хвилин \uD83E\uDD57",
+        subheading: "для жіночої КРАСИ та ЗДОРОВ'Я. \uD83E\uDD55\uD83C\uDF4F\uD83E\uDD6C",
+        category: "6"
+    },
+    {
+        id: 5,
+        img: "https://i9.ytimg.com/vi_webp/HF2dXaUxVnw/sddefault.webp?v=625334da&sqp=COyh9ZsG&rs=AOn4CLBd1qQXITFKfKZI-wB79cth0rEfQg",
+        link: "https://www.youtube.com/embed/HF2dXaUxVnw",
+        heading: "ТОП 3 начинки для ВАРЕНИКІВ",
+        subheading: "ТІСТО, що не розварюється\uD83E\uDD5F\uD83E\uDD5F\uD83E\uDD5F",
+        category: "1, 2"
+    },
+    {
+        id: 4,
+        img: "https://i9.ytimg.com/vi_webp/IHL9qLNiceA/maxresdefault.webp?v=624acd51&sqp=COyh9ZsG&rs=AOn4CLD9EFvmF_3T4uJ3nDyDC24xiNCrJA",
+        link: "https://www.youtube.com/embed/IHL9qLNiceA",
+        heading: "Експрес - ВІДБИВНІ без Смаження на сковороді",
+        subheading: "ШВИДКО та ЕКОНОМНО\uD83E\uDD69",
+        category: "2"
+    },
+    {
+        id: 3,
+        img: "https://i9.ytimg.com/vi_webp/6E04A_tvnEw/maxresdefault.webp?v=62430ed6&sqp=COyh9ZsG&rs=AOn4CLABqJyEEKS-xbKQtVfU3asIqp-kug",
+        link: "https://www.youtube.com/embed/6E04A_tvnEw",
+        heading: "Гречана СМАКОТА з картопляними Кльоцками\uD83E\uDD63\uD83E\uDD54",
+        subheading: "Гречаний суп із кльоцками",
+        category: "3"
+    },
+    {
+        id: 2,
+        img: "https://i9.ytimg.com/vi/P0_DtB_GXuQ/maxresdefault.jpg?v=620e5bf9&sqp=COyh9ZsG&rs=AOn4CLAy4xEF42gK4TelXvV1S7DLc4twfw",
+        link: "https://www.youtube.com/embed/P0_DtB_GXuQ",
+        heading: "\uD83C\uDF4A\uD83C\uDF4BЦитрусові цукати",
+        subheading: "випічка на ВЕЛИКДЕНЬ \uD83C\uDF4A\uD83C\uDF4B",
+        category: "5"
+    },
+    {
+        id: 1,
+        img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
+        link: "https://www.youtube.com/embed/ZWA_FzCjnI0",
+        heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
+        subheading: "Чесний відгук",
+        category: "7"
+    },
+    {
+        id: 19,
+        img: new URL(require("5e4060326ee85f5f")),
+        link: "https://www.youtube.com/embed/5pKsJYTyYj0",
+        heading: "\uD83D\uDD34ТОП 3 незвичайних закусок зі звичайного Оселедця ❗",
+        subheading: "ЩОСЬ НОВЕНЬКЕ на святковий стіл\uD83C\uDF84 ❗",
+        category: "7"
+    }
+];
+
+},{"75737fcdb6bf2459":"dDma7","4576fc15b2366e8c":"lfM5l","75c79cebcd1fae5b":"gb6sq","53bbfd72a04c1a28":"hZ9ha","e779213691e38212":"kxjVA","b759997499ad4121":"dlEAF","9fcf07e86ee004c9":"8Kh4d","5e4060326ee85f5f":"a87io","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dDma7":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_pelmeni.29a879a7.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"lfM5l":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_rulet.aa506d55.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gb6sq":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_hinkali.6e68ccfa.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"hZ9ha":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_soup.9e5f1e4b.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"kxjVA":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_shtruli.8be55829.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dlEAF":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_pancakes.7474821d.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"8Kh4d":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_holubzi.5f465f15.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"a87io":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_buters.8e52b56a.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}],"dXhsG":[function(require,module,exports) {
 const filterShower = document.querySelector(".show-filter");
@@ -1355,36 +1459,6 @@ var _aosCss = require("aos/dist/aos.css"); // You can also use <link> for styles
     ]);
 });
 
-},{}],"iYkXi":[function() {},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")
+},{}],"iYkXi":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")
 
 //# sourceMappingURL=index.975ef6c8.js.map
