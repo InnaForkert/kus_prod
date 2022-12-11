@@ -11,6 +11,7 @@ const filters = document.querySelectorAll(".filter-item");
 const right = document.querySelector(".right");
 const left = document.querySelector(".left");
 const allVideosBtn = document.querySelector("#allVideos");
+const iframe = document.querySelector(".iframeDiv");
 
 let currentFilter;
 let currentDiv;
@@ -100,18 +101,26 @@ function createVideos(arr) {
 }
 
 function nextVideo(e) {
-  videoModal.setAttribute(
-    "src",
-    currentDiv.nextElementSibling.children[0].dataset.link
-  );
+  iframe.innerHTML = `
+  <lite-youtube
+        id="videoModal"
+        class="iframe"
+        videoid="${currentDiv.nextElementSibling.children[0].dataset.link}"
+        playlabel="Play: Keynote (Google I/O '18)"
+      ></lite-youtube>`;
+
   currentDiv = currentDiv.nextElementSibling;
 }
 
 function previousVideo(e) {
-  videoModal.setAttribute(
-    "src",
-    currentDiv.previousElementSibling.children[0].dataset.link
-  );
+  iframe.innerHTML = `
+   <lite-youtube
+        id="videoModal"
+        class="iframe"
+        videoid="${currentDiv.previousElementSibling.children[0].dataset.link}"
+        playlabel="Play: Keynote (Google I/O '18)"
+      ></lite-youtube>`;
+
   currentDiv = currentDiv.previousElementSibling;
 }
 
@@ -129,7 +138,15 @@ function videoCloseOnOverflowClick(e) {
 
 function videoPopup(e) {
   e.preventDefault();
-  videoModal.setAttribute("src", e.currentTarget.children[0].dataset.link);
+  iframe.innerHTML = `
+  <lite-youtube
+        id="videoModal"
+        class="iframe"
+        videoid="${e.currentTarget.children[0].dataset.link}"
+        playlabel="Play: Keynote (Google I/O '18)"
+      ></lite-youtube>`;
+  // videoModal.setAttribute("src", e.currentTarget.children[0].dataset.link);
+  // videoModal.setAttribute("videoid", e.currentTarget.children[0].dataset.link);
   modal.classList.remove("hidden-opacity");
   overflow.classList.remove("visually-hidden");
   currentDiv = e.currentTarget;

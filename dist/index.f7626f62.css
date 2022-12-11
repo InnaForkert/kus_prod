@@ -902,15 +902,13 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     height: 70vh;
-    width: 60%;
-    padding-block: 40px;
-    padding-inline: 10px;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    padding: 40px;
+    padding: 50px;
     top: 55%;
   }
 }
@@ -943,6 +941,7 @@ body {
   border: none;
   border-radius: 20px;
   outline: none;
+  margin: 0 auto;
   position: relative;
   box-shadow: 0 0 4px #150d2a;
 }
