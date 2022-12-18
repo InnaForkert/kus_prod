@@ -2,9 +2,13 @@ let mybutton = document.getElementById("myBtn");
 
 mybutton.addEventListener("click", topFunction);
 
-window.onscroll = function () {
-  scrollFunction();
-};
+window.addEventListener(
+  "scroll",
+  function () {
+    scrollFunction();
+  },
+  { passive: true }
+);
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
