@@ -270,6 +270,7 @@ body {
   background-size: cover;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
   margin-inline: auto;
   padding-block: 40px;
   display: flex;
@@ -1377,6 +1378,64 @@ a, button {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+.menu-inner-modal {
+  width: 90vw;
+  height: 80vh;
+  position: fixed;
+  top: 58%;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-inner-modal {
+    height: 65vh;
+  }
+}
+
+.asort-head {
+  margin: 20px 0 15px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .asort-head {
+    margin: 30px;
+  }
+}
+
+.asort-list {
+  height: 100%;
+  width: 100%;
+  max-height: 67vh;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .asort-list {
+    columns: 2;
+    overflow-y: hidden;
+  }
+}
+
+.asort-item {
+  border-bottom: 1px dotted #80808087;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 5px;
+  font-size: 11px;
+  transition: box-shadow .15s;
+  display: flex;
+}
+
+.asort-item:hover, .asort-item:focus {
+  box-shadow: 1.95px 1.95px 2.6px #00000026;
+}
+
+.price {
+  min-width: 30%;
+  margin-left: auto;
+  position: relative;
 }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {

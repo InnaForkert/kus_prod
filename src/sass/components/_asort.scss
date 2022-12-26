@@ -1,0 +1,52 @@
+.menu-inner-modal {
+  position: fixed;
+  top: 58%;
+  width: 90vw;
+  height: 80vh;
+
+  @include tablet {
+    height: 65vh;
+  }
+}
+
+.asort-head {
+  margin: 20px 0 15px 15px;
+
+  @include tablet {
+    margin: 30px;
+  }
+}
+
+.asort-list {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  max-height: 67vh;
+  overflow-y: scroll;
+
+  @include tablet {
+    columns: 2;
+    overflow-y: hidden;
+  }
+}
+
+.asort-item {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 5px;
+  font-size: 11px;
+  border-bottom: 1px rgba(128, 128, 128, 0.529) dotted;
+  transition: box-shadow 150ms;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
+
+.price {
+  margin-left: auto;
+  min-width: 30%;
+  position: relative;
+}
