@@ -539,8 +539,9 @@ var _videos = require("./scripts/videos");
 var _showFilter = require("./scripts/showFilter");
 var _topTop = require("./scripts/topTop");
 var _aos = require("./scripts/aos");
+var _openPrices = require("./scripts/openPrices");
 
-},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG","./scripts/topTop":"kll1L","./scripts/aos":"d4i0M"}],"46TGa":[function(require,module,exports) {
+},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG","./scripts/topTop":"kll1L","./scripts/aos":"d4i0M","./scripts/openPrices":"7OUsk"}],"46TGa":[function(require,module,exports) {
 const cursor = document.querySelector(".cursor");
 const cursorinner = document.querySelector(".cursor2");
 const a = document.querySelectorAll("a");
@@ -1495,6 +1496,33 @@ var _aosCss = require("aos/dist/aos.css"); // You can also use <link> for styles
     ]);
 });
 
-},{}],"iYkXi":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")
+},{}],"iYkXi":[function() {},{}],"7OUsk":[function(require,module,exports) {
+const asortBtn = document.querySelector(".hero-btn");
+const overflowPrices = document.querySelector(".menu-modal");
+const pricesModal = document.querySelector(".menu-inner-modal");
+const closePricesBtn = document.querySelector(".closePrices");
+asortBtn.addEventListener("click", openPrices);
+function openPrices() {
+    overflowPrices.classList.remove("visually-hidden");
+    pricesModal.classList.remove("hidden-opacity");
+    overflowPrices.addEventListener("click", checkOverflow);
+    document.addEventListener("keydown", checkKey);
+    closePricesBtn.addEventListener("click", closePrices);
+}
+function closePrices() {
+    overflowPrices.classList.add("visually-hidden");
+    pricesModal.classList.add("hidden-opacity");
+    overflowPrices.removeEventListener("click", checkOverflow);
+    document.removeEventListener("keydown", checkKey);
+    closePricesBtn.removeEventListener("click", closePrices);
+}
+function checkOverflow(e) {
+    if (e.target === e.currentTarget) closePrices();
+}
+function checkKey(e) {
+    if (e.key === "Escape") closePrices();
+}
+
+},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")
 
 //# sourceMappingURL=index.975ef6c8.js.map
