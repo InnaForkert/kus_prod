@@ -155,9 +155,12 @@ body {
   font-size: 20px;
   transition: box-shadow 250ms;
 }
-.nav-item:hover, .nav-item:focus {
+.nav-item:hover,
+.nav-item:focus {
   color: rgb(207, 19, 19);
-  box-shadow: rgb(207, 19, 19) 0px 0px 0px 2px inset, rgb(255, 255, 250) 10px -10px 0px -3px, tomato 10px -10px, rgb(255, 255, 250) 20px -20px 0px -3px, rgb(207, 19, 19) 20px -20px;
+  box-shadow: rgb(207, 19, 19) 0px 0px 0px 2px inset,
+    rgb(255, 255, 250) 10px -10px 0px -3px, tomato 10px -10px,
+    rgb(255, 255, 250) 20px -20px 0px -3px, rgb(207, 19, 19) 20px -20px;
 }
 
 .hero {
@@ -256,7 +259,7 @@ body {
   top: 0;
   left: 0;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .card--depth {
@@ -471,7 +474,7 @@ body {
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-23px, 0, 0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .video-gallery .gallery-item .gallery-item-caption {
@@ -690,7 +693,8 @@ body {
   color: rgb(255, 255, 250);
   z-index: 9999;
 }
-.close-btn:hover, .close-btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   color: rgb(21, 13, 42);
   color: rgb(207, 19, 19);
 }
@@ -714,7 +718,8 @@ body {
   color: rgb(21, 13, 42);
   transition: color 300ms;
 }
-.video-controller:hover, .video-controller:focus {
+.video-controller:hover,
+.video-controller:focus {
   color: rgb(207, 19, 19);
 }
 
@@ -910,7 +915,7 @@ html {
   opacity: 1;
   bottom: 0;
   -webkit-animation: animateWaves 8s linear infinite;
-          animation: animateWaves 8s linear infinite;
+  animation: animateWaves 8s linear infinite;
 }
 
 .wave#wave2 {
@@ -918,7 +923,7 @@ html {
   opacity: 0.5;
   bottom: 10px;
   -webkit-animation: animate 8s linear infinite !important;
-          animation: animate 8s linear infinite !important;
+  animation: animate 8s linear infinite !important;
 }
 
 .wave#wave3 {
@@ -926,7 +931,7 @@ html {
   opacity: 0.2;
   bottom: 15px;
   -webkit-animation: animateWaves 6s linear infinite;
-          animation: animateWaves 6s linear infinite;
+  animation: animateWaves 6s linear infinite;
 }
 
 .wave#wave4 {
@@ -934,7 +939,7 @@ html {
   opacity: 0.7;
   bottom: 20px;
   -webkit-animation: animate 6s linear infinite;
-          animation: animate 6s linear infinite;
+  animation: animate 6s linear infinite;
 }
 
 @-webkit-keyframes animateWaves {
@@ -1012,7 +1017,8 @@ html {
   transition: color 250ms;
   cursor: none;
 }
-.mobile-menu-link:hover, .mobile-menu-link:focus {
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
   color: rgb(207, 19, 19);
 }
 .mobile-menu-close {
@@ -1025,7 +1031,8 @@ html {
   outline: none;
   transition: color 250ms;
 }
-.mobile-menu-close:hover, .mobile-menu-close:focus {
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
   color: rgb(207, 19, 19);
 }
 .mobile-menu-onClose {
@@ -1076,4 +1083,4 @@ html {
   left: 0;
   bottom: 0;
   height: 10%;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

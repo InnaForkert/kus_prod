@@ -2,8 +2,8 @@
   position: relative;
 
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
 
   height: 90vh;
   width: 100vw;
@@ -54,6 +54,25 @@
       padding: 24px;
       font-size: 54px;
       width: 700px;
+    }
+  }
+
+  &-btn {
+    width: 170px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: $main-color;
+    border: $accent-color 1px solid;
+    color: $accent-color;
+    text-shadow: 1px 0 0 black;
+    transition-property: border-color, background-color, color;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+      background-color: $accent-color;
+      border-color: $main-color;
     }
   }
 }

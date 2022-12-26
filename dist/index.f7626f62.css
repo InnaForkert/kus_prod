@@ -268,8 +268,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  flex-direction: column-reverse;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   margin-inline: auto;
   padding-block: 40px;
   display: flex;
@@ -328,6 +328,24 @@ body {
     padding: 24px;
     font-size: 54px;
   }
+}
+
+.hero-btn {
+  width: 170px;
+  color: #cf1313;
+  text-shadow: 1px 0 #000;
+  background-color: bisque;
+  border: 1px solid #cf1313;
+  border-radius: 10px;
+  padding: 10px 15px;
+  transition-property: border-color, background-color, color;
+  transition-duration: .25s;
+}
+
+.hero-btn:hover, .hero-btn:focus {
+  color: bisque;
+  background-color: #cf1313;
+  border-color: bisque;
 }
 
 .cards--grid {
