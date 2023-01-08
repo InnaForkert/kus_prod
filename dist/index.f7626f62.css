@@ -361,8 +361,10 @@ body {
   display: inline-block;
 }
 
-.card--wrap:hover .card {
-  transform: rotateY(-180deg);
+@media screen and (min-width: 480px) {
+  .card--wrap:hover .card {
+    transform: rotateY(-180deg);
+  }
 }
 
 .card {

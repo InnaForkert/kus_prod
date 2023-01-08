@@ -590,7 +590,7 @@ const a = document.querySelectorAll("a");
 },{}],"iDcOQ":[function(require,module,exports) {
 const cards = document.querySelectorAll(".card");
 cards.forEach((card)=>card.addEventListener("click", handleCardClick));
-cards.forEach((card)=>card.addEventListener("touchend", handleCardClick));
+cards.forEach((card)=>card.addEventListener("touch", handleCardClick));
 function handleCardClick() {
     this.classList.toggle("rotated");
 }

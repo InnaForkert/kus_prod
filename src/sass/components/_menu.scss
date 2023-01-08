@@ -9,9 +9,11 @@
   display: inline-block;
   place-self: start;
 
-  &:hover {
-    .card {
-      transform: rotateY(-180deg);
+  @media screen and (min-width: 480px) {
+    &:hover {
+      .card {
+        transform: rotateY(-180deg);
+      }
     }
   }
 }
