@@ -714,6 +714,7 @@ function nextVideo(e) {
         class="iframe"
         videoid="${currentDiv.nextElementSibling.children[0].dataset.link}"
         playlabel="Play: Keynote (Google I/O '18)"
+        title='відео рецепт'
       ></lite-youtube>`;
     currentDiv = currentDiv.nextElementSibling;
 }
@@ -1539,6 +1540,7 @@ function openVideo(e) {
         class="iframe"
         videoid="${e.target.dataset.card}"
         playlabel="Play: Keynote (Google I/O '18)"
+        title='відео рецепт'
       ></lite-youtube>`;
     modal.classList.remove("hidden-opacity");
     overflow.classList.remove("visually-hidden");

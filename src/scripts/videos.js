@@ -107,6 +107,7 @@ function nextVideo(e) {
         class="iframe"
         videoid="${currentDiv.nextElementSibling.children[0].dataset.link}"
         playlabel="Play: Keynote (Google I/O '18)"
+        title='відео рецепт'
       ></lite-youtube>`;
 
   currentDiv = currentDiv.nextElementSibling;

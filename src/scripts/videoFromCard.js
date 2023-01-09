@@ -16,6 +16,7 @@ function openVideo(e) {
         class="iframe"
         videoid="${e.target.dataset.card}"
         playlabel="Play: Keynote (Google I/O '18)"
+        title='відео рецепт'
       ></lite-youtube>`;
   modal.classList.remove("hidden-opacity");
   overflow.classList.remove("visually-hidden");
