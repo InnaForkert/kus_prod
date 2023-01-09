@@ -1141,7 +1141,17 @@ a, button {
   position: relative;
 }
 
-.social-icon, .menu {
+.icon {
+  color: #cf1313;
+}
+
+.menu {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.social-icon {
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -1151,7 +1161,13 @@ a, button {
 }
 
 .social-icon__item, .menu__item {
+  color: #cf1313;
+  background-color: bisque;
+  border-radius: 14px;
+  gap: 15px;
+  padding: 10px;
   list-style: none;
+  display: flex;
 }
 
 .social-icon__link {
@@ -1262,7 +1278,7 @@ a, button {
 
 .mobile-menu {
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   z-index: 1024;
   touch-action: none;
   background-color: bisque;
@@ -1361,7 +1377,6 @@ a, button {
 
 .mobile-menu-list + .footer {
   width: 100vw;
-  height: 10%;
   position: absolute;
   bottom: 0;
   left: 0;

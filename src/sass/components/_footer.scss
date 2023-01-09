@@ -11,8 +11,17 @@
   height: 246px;
 }
 
-.social-icon,
+.icon {
+  color: $accent-color;
+}
+
 .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-icon {
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,6 +33,12 @@
 .social-icon__item,
 .menu__item {
   list-style: none;
+  display: flex;
+  gap: 15px;
+  background-color: $main-color;
+  padding: 10px;
+  border-radius: 14px;
+  color: $accent-color;
 }
 
 .social-icon__link {
