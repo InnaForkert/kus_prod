@@ -540,8 +540,9 @@ var _showFilter = require("./scripts/showFilter");
 var _topTop = require("./scripts/topTop");
 var _aos = require("./scripts/aos");
 var _openPrices = require("./scripts/openPrices");
+var _videoFromCard = require("./scripts/videoFromCard");
 
-},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG","./scripts/topTop":"kll1L","./scripts/aos":"d4i0M","./scripts/openPrices":"7OUsk"}],"46TGa":[function(require,module,exports) {
+},{"./scripts/cursor":"46TGa","./scripts/menu":"iDcOQ","./scripts/mobileMenu":"1OFUP","./scripts/videos":"7n5Iu","./scripts/showFilter":"dXhsG","./scripts/topTop":"kll1L","./scripts/aos":"d4i0M","./scripts/openPrices":"7OUsk","./scripts/videoFromCard":"bZrJ1"}],"46TGa":[function(require,module,exports) {
 const cursor = document.querySelector(".cursor");
 const cursorinner = document.querySelector(".cursor2");
 const a = document.querySelectorAll("a");
@@ -591,8 +592,8 @@ const a = document.querySelectorAll("a");
 const cards = document.querySelectorAll(".card");
 cards.forEach((card)=>card.addEventListener("click", handleCardClick));
 cards.forEach((card)=>card.addEventListener("touch", handleCardClick));
-function handleCardClick() {
-    this.classList.toggle("rotated");
+function handleCardClick(e) {
+    if (e.target.nodeName !== "BUTTON") this.classList.toggle("rotated");
 }
 
 },{}],"1OFUP":[function(require,module,exports) {
@@ -745,8 +746,6 @@ function videoPopup(e) {
         videoid="${e.currentTarget.children[0].dataset.link}"
         playlabel="Play: Keynote (Google I/O '18)"
       ></lite-youtube>`;
-    // videoModal.setAttribute("src", e.currentTarget.children[0].dataset.link);
-    // videoModal.setAttribute("videoid", e.currentTarget.children[0].dataset.link);
     modal.classList.remove("hidden-opacity");
     overflow.classList.remove("visually-hidden");
     currentDiv = e.currentTarget;
@@ -1521,6 +1520,47 @@ function checkOverflow(e) {
 }
 function checkKey(e) {
     if (e.key === "Escape") closePrices();
+}
+
+},{}],"bZrJ1":[function(require,module,exports) {
+const overflow = document.querySelector(".video-modal");
+const modal = document.querySelector(".modal");
+const buttons = document.querySelectorAll("[data-card]");
+const iframe = document.querySelector(".iframeDiv");
+const previous = document.querySelector("#previous");
+const next = document.querySelector("#next");
+buttons.forEach((button)=>{
+    button.addEventListener("click", openVideo);
+});
+function openVideo(e) {
+    iframe.innerHTML = `
+  <lite-youtube
+        id="videoModal"
+        class="iframe"
+        videoid="${e.target.dataset.card}"
+        playlabel="Play: Keynote (Google I/O '18)"
+      ></lite-youtube>`;
+    modal.classList.remove("hidden-opacity");
+    overflow.classList.remove("visually-hidden");
+    document.addEventListener("keydown", videoKeyHandler);
+    overflow.addEventListener("click", videoCloseOnOverflowClick);
+    previous.classList.add("visually-hidden");
+    next.classList.add("visually-hidden");
+}
+function videoKeyHandler(e) {
+    if (e.key === "Escape") videoClose();
+}
+function videoClose() {
+    modal.classList.add("hidden-opacity");
+    overflow.classList.add("visually-hidden");
+    document.removeEventListener("keydown", videoKeyHandler);
+    overflow.removeEventListener("click", videoCloseOnOverflowClick);
+    previous.classList.remove("visually-hidden");
+    next.classList.remove("visually-hidden");
+    iframe.innerHTML = "";
+}
+function videoCloseOnOverflowClick(e) {
+    if (e.target === e.currentTarget) videoClose();
 }
 
 },{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequire8436")

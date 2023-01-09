@@ -222,9 +222,10 @@
   font-family: $heading-font;
   color: $accent-color;
 }
-.card-descr {
+.card--descr {
   display: block;
   font-family: $main-font;
+  margin-bottom: 15px;
 }
 .card--figure .card-img {
   max-height: 243px;

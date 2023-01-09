@@ -145,8 +145,6 @@ function videoPopup(e) {
         videoid="${e.currentTarget.children[0].dataset.link}"
         playlabel="Play: Keynote (Google I/O '18)"
       ></lite-youtube>`;
-  // videoModal.setAttribute("src", e.currentTarget.children[0].dataset.link);
-  // videoModal.setAttribute("videoid", e.currentTarget.children[0].dataset.link);
   modal.classList.remove("hidden-opacity");
   overflow.classList.remove("visually-hidden");
   currentDiv = e.currentTarget;

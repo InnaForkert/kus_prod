@@ -602,7 +602,8 @@ body {
   font-family: Pacifico, cursive;
 }
 
-.card-descr {
+.card--descr {
+  margin-bottom: 15px;
   font-family: Comfortaa, sans-serif;
   display: block;
 }
@@ -908,7 +909,6 @@ body {
 
 .modal {
   width: 85%;
-  height: 50%;
   z-index: 9999;
   background-color: #fffffa;
   border-radius: 20px;

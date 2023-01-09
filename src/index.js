@@ -6,3 +6,4 @@ import "./scripts/showFilter";
 import "./scripts/topTop";
 import "./scripts/aos";
 import "./scripts/openPrices";
+import "./scripts/videoFromCard";
