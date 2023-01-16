@@ -827,7 +827,7 @@ const videoArray = [
     },
     {
         id: 11,
-        img: "https://i9.ytimg.com/vi_webp/k412HWe9vFQ/maxresdefault.webp?v=62cb28c2&sqp=COia9ZsG&rs=AOn4CLDWeaakS6ojCqfHzip4r1Z-Gc2_Kg",
+        img: new URL(require("1130ebd2dc9b8615")),
         link: "k412HWe9vFQ",
         heading: "Ласуй, та Не Думай про Калорії ❗",
         subheading: "Корисний Перекус, що можна взяти з собою в дорогу",
@@ -835,7 +835,7 @@ const videoArray = [
     },
     {
         id: 10,
-        img: "https://i9.ytimg.com/vi_webp/WtE1Et_gM8Y/maxresdefault.webp?v=629265c2&sqp=CJSd9ZsG&rs=AOn4CLDoJSYkydRtFdN5g9U7GtjHCwiGbA",
+        img: new URL(require("988da8221fa13c96")),
         link: "WtE1Et_gM8Y",
         heading: "ХАЧАПУРІ",
         subheading: "Експрес ХАЧАПУРІ за 10 хвилин\uD83C\uDF55\uD83E\uDD6E",
@@ -843,7 +843,7 @@ const videoArray = [
     },
     {
         id: 9,
-        img: "https://i9.ytimg.com/vi_webp/TZiPAKqxioY/maxresdefault.webp?v=627c2650&sqp=CMCf9ZsG&rs=AOn4CLCja8CddqHkJeE4wUH86QDtyC7YKQ",
+        img: new URL(require("6be4cf6c2afb0fc8")),
         link: "TZiPAKqxioY",
         heading: "\uD83D\uDD34ТОП 3 рецепти як смачно приготувати курячі сердечка",
         subheading: "НИЗЬКОКАЛОРІЙНІША частина курки.\uD83C\uDF57",
@@ -851,7 +851,7 @@ const videoArray = [
     },
     {
         id: 8,
-        img: "https://i9.ytimg.com/vi/0mqnbl613uM/maxresdefault.jpg?v=626ed71e&sqp=CMCf9ZsG&rs=AOn4CLCrBrCRlHEPGjVYBshqFp3M76gBeg",
+        img: new URL(require("d0293dc84908567c")),
         link: "0mqnbl613uM",
         heading: "Курячий рулет з Клюквою\uD83C\uDF52",
         subheading: "Неймовірна СМАКОТА!",
@@ -859,7 +859,7 @@ const videoArray = [
     },
     {
         id: 7,
-        img: "https://i9.ytimg.com/vi_webp/dGJ51V5OPy0/maxresdefault.webp?v=6262ba38&sqp=CMCf9ZsG&rs=AOn4CLBwfRUL7PH3dOys3D807aV6Wp2ldA",
+        img: new URL(require("3469b10174a82b7")),
         link: "dGJ51V5OPy0",
         heading: "Привітання з ВЕЛИКОДНЕМ!",
         subheading: "ХРИСТОС Воскрес!",
@@ -867,7 +867,7 @@ const videoArray = [
     },
     {
         id: 6,
-        img: "https://i9.ytimg.com/vi_webp/XrwUxcr-RNI/maxresdefault.webp?v=625e847a&sqp=CMCf9ZsG&rs=AOn4CLBS-GTkSVQje7aFfzwzGFzeCVKHAA",
+        img: new URL(require("e2cacf937acd48c8")),
         link: "XrwUxcr-RNI",
         heading: "Два СУПЕР-САЛАТИ за 5 хвилин \uD83E\uDD57",
         subheading: "для жіночої КРАСИ та ЗДОРОВ'Я. \uD83E\uDD55\uD83C\uDF4F\uD83E\uDD6C",
@@ -875,7 +875,7 @@ const videoArray = [
     },
     {
         id: 5,
-        img: "https://i9.ytimg.com/vi_webp/HF2dXaUxVnw/sddefault.webp?v=625334da&sqp=COyh9ZsG&rs=AOn4CLBd1qQXITFKfKZI-wB79cth0rEfQg",
+        img: new URL(require("28516725f55bf7ba")),
         link: "HF2dXaUxVnw",
         heading: "ТОП 3 начинки для ВАРЕНИКІВ",
         subheading: "ТІСТО, що не розварюється\uD83E\uDD5F\uD83E\uDD5F\uD83E\uDD5F",
@@ -883,7 +883,7 @@ const videoArray = [
     },
     {
         id: 4,
-        img: "https://i9.ytimg.com/vi_webp/IHL9qLNiceA/maxresdefault.webp?v=624acd51&sqp=COyh9ZsG&rs=AOn4CLD9EFvmF_3T4uJ3nDyDC24xiNCrJA",
+        img: new URL(require("769abe6df29fec1")),
         link: "IHL9qLNiceA",
         heading: "Експрес - ВІДБИВНІ без Смаження на сковороді",
         subheading: "ШВИДКО та ЕКОНОМНО\uD83E\uDD69",
@@ -891,7 +891,7 @@ const videoArray = [
     },
     {
         id: 3,
-        img: "https://i9.ytimg.com/vi_webp/6E04A_tvnEw/maxresdefault.webp?v=62430ed6&sqp=COyh9ZsG&rs=AOn4CLABqJyEEKS-xbKQtVfU3asIqp-kug",
+        img: new URL(require("417e97b3448a377f")),
         link: "6E04A_tvnEw",
         heading: "Гречана СМАКОТА з картопляними Кльоцками\uD83E\uDD63\uD83E\uDD54",
         subheading: "Гречаний суп із кльоцками",
@@ -899,7 +899,7 @@ const videoArray = [
     },
     {
         id: 2,
-        img: "https://i9.ytimg.com/vi/P0_DtB_GXuQ/maxresdefault.jpg?v=620e5bf9&sqp=COyh9ZsG&rs=AOn4CLAy4xEF42gK4TelXvV1S7DLc4twfw",
+        img: new URL(require("e8ce161787d014c7")),
         link: "P0_DtB_GXuQ",
         heading: "\uD83C\uDF4A\uD83C\uDF4BЦитрусові цукати",
         subheading: "випічка на ВЕЛИКДЕНЬ \uD83C\uDF4A\uD83C\uDF4B",
@@ -907,7 +907,7 @@ const videoArray = [
     },
     {
         id: 1,
-        img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
+        img: new URL(require("77e649f6b15fb2b2")),
         link: "ZWA_FzCjnI0",
         heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
         subheading: "Чесний відгук",
@@ -920,10 +920,26 @@ const videoArray = [
         heading: "\uD83D\uDD34ТОП 3 незвичайних закусок зі звичайного Оселедця ❗",
         subheading: "ЩОСЬ НОВЕНЬКЕ на святковий стіл\uD83C\uDF84 ❗",
         category: "7"
+    },
+    {
+        id: 20,
+        img: new URL(require("e709add396ef9138")),
+        link: "_H80tr01h7g",
+        heading: "\uD83D\uDD34ТОП 3 Способи 'Як защипнути вареники'",
+        subheading: "\uD83E\uDD5F Фігурне ліплення ВАРЕНИКІВ",
+        category: "1, 2"
+    },
+    {
+        id: 21,
+        img: new URL(require("6e20c9f0c5ca3f0b")),
+        link: "-7nlh0Mowc0",
+        heading: "Українські БЕНДЕРИКИ\uD83E\uDD5E ",
+        subheading: "Смачні , Ситні та Бюджетні \uD83D\uDCB0",
+        category: "1, 2"
     }
 ];
 
-},{"75737fcdb6bf2459":"dDma7","4576fc15b2366e8c":"lfM5l","75c79cebcd1fae5b":"gb6sq","53bbfd72a04c1a28":"hZ9ha","e779213691e38212":"kxjVA","b759997499ad4121":"dlEAF","9fcf07e86ee004c9":"8Kh4d","5e4060326ee85f5f":"a87io","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dDma7":[function(require,module,exports) {
+},{"75737fcdb6bf2459":"dDma7","4576fc15b2366e8c":"lfM5l","75c79cebcd1fae5b":"gb6sq","53bbfd72a04c1a28":"hZ9ha","e779213691e38212":"kxjVA","b759997499ad4121":"dlEAF","9fcf07e86ee004c9":"8Kh4d","5e4060326ee85f5f":"a87io","e709add396ef9138":"bnmOV","6e20c9f0c5ca3f0b":"ftp3m","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","1130ebd2dc9b8615":"d7XVA","988da8221fa13c96":"4pcqt","3469b10174a82b7":"6xT0V","e2cacf937acd48c8":"hbd5a","28516725f55bf7ba":"bQ3fQ","769abe6df29fec1":"5YaFe","417e97b3448a377f":"cokqq","d0293dc84908567c":"lOGHj","6be4cf6c2afb0fc8":"2iHEg","e8ce161787d014c7":"jAl5u","77e649f6b15fb2b2":"hJciE"}],"dDma7":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_pelmeni.29a879a7.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -981,6 +997,12 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_
 },{"./helpers/bundle-url":"lgJ39"}],"a87io":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "video_buters.8e52b56a.jpg" + "?" + Date.now();
 
+},{"./helpers/bundle-url":"lgJ39"}],"bnmOV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "vareniki.7d675b6b.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"ftp3m":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "benderyky.863918e0.webp" + "?" + Date.now();
+
 },{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
@@ -1011,7 +1033,40 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"dXhsG":[function(require,module,exports) {
+},{}],"d7XVA":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "lasui.aae5198e.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"4pcqt":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "hachapuri.459f5fad.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6xT0V":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "easter.f0a867d0.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"hbd5a":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "salads.f2d0c538.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bQ3fQ":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "vareniki2.6685dc73.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"5YaFe":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "beat.da6d0d24.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"cokqq":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "hrecha.c83cbad5.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lOGHj":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "hen.25c14cbb.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"2iHEg":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "hearts.9dca52ad.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jAl5u":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "citrus.726979cf.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"hJciE":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "freeze.21290988.webp" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"dXhsG":[function(require,module,exports) {
 const filterShower = document.querySelector(".show-filter");
 const filter = document.querySelector(".video-filter");
 filterShower.addEventListener("click", showFilter);

@@ -58,7 +58,7 @@ export const videoArray = [
   },
   {
     id: 11,
-    img: "https://i9.ytimg.com/vi_webp/k412HWe9vFQ/maxresdefault.webp?v=62cb28c2&sqp=COia9ZsG&rs=AOn4CLDWeaakS6ojCqfHzip4r1Z-Gc2_Kg",
+    img: new URL("../img/lasui.webp", import.meta.url),
     link: "k412HWe9vFQ",
     heading: "Ласуй, та Не Думай про Калорії ❗",
     subheading: "Корисний Перекус, що можна взяти з собою в дорогу",
@@ -66,7 +66,7 @@ export const videoArray = [
   },
   {
     id: 10,
-    img: "https://i9.ytimg.com/vi_webp/WtE1Et_gM8Y/maxresdefault.webp?v=629265c2&sqp=CJSd9ZsG&rs=AOn4CLDoJSYkydRtFdN5g9U7GtjHCwiGbA",
+    img: new URL("../img/hachapuri.webp", import.meta.url),
     link: "WtE1Et_gM8Y",
     heading: "ХАЧАПУРІ",
     subheading: "Експрес ХАЧАПУРІ за 10 хвилин🍕🥮",
@@ -74,7 +74,7 @@ export const videoArray = [
   },
   {
     id: 9,
-    img: "https://i9.ytimg.com/vi_webp/TZiPAKqxioY/maxresdefault.webp?v=627c2650&sqp=CMCf9ZsG&rs=AOn4CLCja8CddqHkJeE4wUH86QDtyC7YKQ",
+    img: new URL("../img/hearts.webp", import.meta.url),
     link: "TZiPAKqxioY",
     heading: "🔴ТОП 3 рецепти як смачно приготувати курячі сердечка",
     subheading: "НИЗЬКОКАЛОРІЙНІША частина курки.🍗",
@@ -82,7 +82,7 @@ export const videoArray = [
   },
   {
     id: 8,
-    img: "https://i9.ytimg.com/vi/0mqnbl613uM/maxresdefault.jpg?v=626ed71e&sqp=CMCf9ZsG&rs=AOn4CLCrBrCRlHEPGjVYBshqFp3M76gBeg",
+    img: new URL("../img/hen.jpg", import.meta.url),
     link: "0mqnbl613uM",
     heading: "Курячий рулет з Клюквою🍒",
     subheading: "Неймовірна СМАКОТА!",
@@ -90,7 +90,7 @@ export const videoArray = [
   },
   {
     id: 7,
-    img: "https://i9.ytimg.com/vi_webp/dGJ51V5OPy0/maxresdefault.webp?v=6262ba38&sqp=CMCf9ZsG&rs=AOn4CLBwfRUL7PH3dOys3D807aV6Wp2ldA",
+    img: new URL("../img/easter.webp", import.meta.url),
     link: "dGJ51V5OPy0",
     heading: "Привітання з ВЕЛИКОДНЕМ!",
     subheading: "ХРИСТОС Воскрес!",
@@ -98,7 +98,7 @@ export const videoArray = [
   },
   {
     id: 6,
-    img: "https://i9.ytimg.com/vi_webp/XrwUxcr-RNI/maxresdefault.webp?v=625e847a&sqp=CMCf9ZsG&rs=AOn4CLBS-GTkSVQje7aFfzwzGFzeCVKHAA",
+    img: new URL("../img/salads.webp", import.meta.url),
     link: "XrwUxcr-RNI",
     heading: "Два СУПЕР-САЛАТИ за 5 хвилин 🥗",
     subheading: "для жіночої КРАСИ та ЗДОРОВ'Я. 🥕🍏🥬",
@@ -106,7 +106,7 @@ export const videoArray = [
   },
   {
     id: 5,
-    img: "https://i9.ytimg.com/vi_webp/HF2dXaUxVnw/sddefault.webp?v=625334da&sqp=COyh9ZsG&rs=AOn4CLBd1qQXITFKfKZI-wB79cth0rEfQg",
+    img: new URL("../img/vareniki2.webp", import.meta.url),
     link: "HF2dXaUxVnw",
     heading: "ТОП 3 начинки для ВАРЕНИКІВ",
     subheading: "ТІСТО, що не розварюється🥟🥟🥟",
@@ -114,7 +114,7 @@ export const videoArray = [
   },
   {
     id: 4,
-    img: "https://i9.ytimg.com/vi_webp/IHL9qLNiceA/maxresdefault.webp?v=624acd51&sqp=COyh9ZsG&rs=AOn4CLD9EFvmF_3T4uJ3nDyDC24xiNCrJA",
+    img: new URL("../img/beat.webp", import.meta.url),
     link: "IHL9qLNiceA",
     heading: "Експрес - ВІДБИВНІ без Смаження на сковороді",
     subheading: "ШВИДКО та ЕКОНОМНО🥩",
@@ -122,7 +122,7 @@ export const videoArray = [
   },
   {
     id: 3,
-    img: "https://i9.ytimg.com/vi_webp/6E04A_tvnEw/maxresdefault.webp?v=62430ed6&sqp=COyh9ZsG&rs=AOn4CLABqJyEEKS-xbKQtVfU3asIqp-kug",
+    img: new URL("../img/hrecha.webp", import.meta.url),
     link: "6E04A_tvnEw",
     heading: "Гречана СМАКОТА з картопляними Кльоцками🥣🥔",
     subheading: "Гречаний суп із кльоцками",
@@ -130,7 +130,7 @@ export const videoArray = [
   },
   {
     id: 2,
-    img: "https://i9.ytimg.com/vi/P0_DtB_GXuQ/maxresdefault.jpg?v=620e5bf9&sqp=COyh9ZsG&rs=AOn4CLAy4xEF42gK4TelXvV1S7DLc4twfw",
+    img: new URL("../img/citrus.jpg", import.meta.url),
     link: "P0_DtB_GXuQ",
     heading: "🍊🍋Цитрусові цукати",
     subheading: "випічка на ВЕЛИКДЕНЬ 🍊🍋",
@@ -138,7 +138,7 @@ export const videoArray = [
   },
   {
     id: 1,
-    img: "https://i9.ytimg.com/vi_webp/ZWA_FzCjnI0/maxresdefault.webp?v=6328bddf&sqp=CLCD9ZsG&rs=AOn4CLDi8FQRKpn8CS9XJG-0Rpt-4F2w9Q",
+    img: new URL("../img/freeze.webp", import.meta.url),
     link: "ZWA_FzCjnI0",
     heading: "ОБЗОР та ВІДГУК на морозильну камеру Vestfrost CMF144W",
     subheading: "Чесний відгук",
@@ -153,6 +153,62 @@ export const videoArray = [
     category: "7",
   },
 
+  {
+    id: 20,
+    img: new URL("../img/vareniki.webp", import.meta.url),
+    link: "_H80tr01h7g",
+    heading: "🔴ТОП 3 Способи 'Як защипнути вареники'",
+    subheading: "🥟 Фігурне ліплення ВАРЕНИКІВ",
+    category: "1, 2",
+  },
+  {
+    id: 21,
+    img: new URL("../img/benderyky.webp", import.meta.url),
+    link: "-7nlh0Mowc0",
+    heading: "Українські БЕНДЕРИКИ🥞 ",
+    subheading: "Смачні , Ситні та Бюджетні 💰",
+    category: "1, 2",
+  },
+  // {
+  //   id: 10,
+  //   img: "",
+  //   link: "",
+  //   heading: "",
+  //   subheading: "",
+  //   category: "",
+  // },
+  // {
+  //   id: 10,
+  //   img: "",
+  //   link: "",
+  //   heading: "",
+  //   subheading: "",
+  //   category: "",
+  // },
+  // {
+  //   id: 10,
+  //   img: "",
+  //   link: "",
+  //   heading: "",
+  //   subheading: "",
+  //   category: "",
+  // },
+  // {
+  //   id: 10,
+  //   img: "",
+  //   link: "",
+  //   heading: "",
+  //   subheading: "",
+  //   category: "",
+  // },
+  // {
+  //   id: 10,
+  //   img: "",
+  //   link: "",
+  //   heading: "",
+  //   subheading: "",
+  //   category: "",
+  // },
   // {
   //   id: 10,
   //   img: "",

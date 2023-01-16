@@ -609,7 +609,7 @@ body {
 }
 
 .card--figure .card-img {
-  max-height: 243px;
+  max-height: 80%;
   margin: 0 auto;
 }
 
@@ -1164,6 +1164,8 @@ a, button {
   color: #cf1313;
   background-color: bisque;
   border-radius: 14px;
+  justify-content: space-between;
+  align-items: center;
   gap: 15px;
   padding: 10px;
   list-style: none;

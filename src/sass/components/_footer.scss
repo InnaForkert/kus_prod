@@ -35,6 +35,8 @@
   list-style: none;
   display: flex;
   gap: 15px;
+  align-items: center;
+  justify-content: space-between;
   background-color: $main-color;
   padding: 10px;
   border-radius: 14px;
